@@ -61,6 +61,6 @@ play :Fs4
 sleep 0.75
 # chord D7+
 play :G4 
-play :Cs4 
-play :Fs4
+play :D5 
+play :G5
 sleep 0.75
