@@ -1,5 +1,5 @@
-play :A3
-play :D3
+#play :A3
+#play :D3
 play :A4
 play :D4
 play :Fs4
