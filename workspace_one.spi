@@ -1,5 +1,5 @@
 play :F
-sleep 1
+sleep 0.5
 play :G
-sleep 1
+sleep 0.5
 play :A
