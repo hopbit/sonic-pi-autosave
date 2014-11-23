@@ -15,7 +15,7 @@ play :B4
 sleep 0.5
 play :C5
 # go down
-sleep 1
+sleep 0.5
 play :C5
 sleep 0.5
 play :B4
