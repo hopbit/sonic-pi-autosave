@@ -1,3 +1,6 @@
-#play :A3
-#play :D3
-play :A4 play :D4 play :Fs4 # D dur
+# D dur
+play :A3
+play :D3
+play :A4 
+play :D4 
+play :Fs4
