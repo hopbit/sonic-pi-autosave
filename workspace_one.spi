@@ -64,3 +64,8 @@ play :G4
 play :D5 
 play :G5
 sleep 0.75
+
+# ref 
+play :G3
+play :B3
+play :E4
