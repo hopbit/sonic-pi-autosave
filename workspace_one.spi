@@ -12,4 +12,3 @@ play :A
 sleep 0.5
 play :B
 sleep 0.5
-play :C
