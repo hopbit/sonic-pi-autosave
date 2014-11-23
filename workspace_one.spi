@@ -1,1 +1,3 @@
 synth :beep, {amp: 1.0, note: 60}
+pause 1
+play 65
