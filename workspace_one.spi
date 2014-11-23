@@ -66,6 +66,15 @@ play :G5
 sleep 0.75
 
 # ref 
+
+# chord em7
 play :G3
 play :B3
 play :E4
+sleep 0.75
+
+# chord em7
+play :E3
+play :A3
+play :Cs5
+sleep 0.75
