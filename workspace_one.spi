@@ -1,5 +1,5 @@
-play :C2
+play :C4
 sleep 0.5
-play :D2
+play :D4
 sleep 0.5
-play :E2
+play :E4
