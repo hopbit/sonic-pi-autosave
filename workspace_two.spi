@@ -2,3 +2,5 @@
 play :C
 sleep 1
 play :C4
+sleep 1
+synth :beep 
