@@ -8,3 +8,9 @@
   play :F
   sleep 0.5
 end
+play :A
+sleep 0.5
+play :B
+sleep 0.5
+play :C5
+sleep 1.0
