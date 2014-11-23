@@ -1,1 +1,5 @@
-play 65, cheese: 1, beans: 0.5
+play :F
+sleep 1
+play :G
+sleep 1
+play :A
