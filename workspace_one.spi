@@ -4,12 +4,12 @@
 play :A4 
 play :D4 
 play :Fs4
-sleep 1
+sleep 0.75
 # chord D7+
 play :A4 
 play :Cs4 
 play :Fs4
-sleep 1
+sleep 0.75
 # chord D7
 play :A4 
 play :C4 
