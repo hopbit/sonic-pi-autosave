@@ -1,1 +1,1 @@
-play 50, amp: 10.0
+synth :beep, {amp: 1.0, note: 60}
