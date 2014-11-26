@@ -1,2 +1,4 @@
 # amp it up
 play :C5, amp: 0.5
+sleep 1
+play :C5
