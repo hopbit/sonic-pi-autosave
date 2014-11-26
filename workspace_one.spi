@@ -1,12 +1,12 @@
 # "silent" C
-play :C, amp: 0
+play :C5, amp: 0
 sleep 1
 # a lil' bit louder
-play :C, amp: 0.5
+play :C5, amp: 0.5
 sleep 1
 # loud
-play :C, amp: 1.0
+play :C5, amp: 1.0
 sleep 1
 # very loud?
-play :C, amp: 10.0
+play :C5, amp: 10.0
 sleep 1
