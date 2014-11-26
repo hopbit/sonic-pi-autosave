@@ -1,4 +1,4 @@
-use_synth :gnoise
+use_synth :mod_beep
 loop do
   2.times do
     play :F5
