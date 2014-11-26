@@ -1,4 +1,4 @@
-use_synth :mod_pulse
+use_synth :mod_saw
 loop do
   2.times do
     play :F5
