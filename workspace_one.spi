@@ -30,3 +30,11 @@ end
   play :F
   sleep 0.5
 end
+2.times do
+  play :F
+  sleep 0.5
+  play :C
+  sleep 0.5
+  play :F
+  sleep 1.0
+end
