@@ -1,4 +1,4 @@
-use_synth :cnoise
+use_synth :dsaw
 loop do
   2.times do
     play :F
