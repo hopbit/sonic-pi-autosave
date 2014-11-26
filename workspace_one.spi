@@ -28,4 +28,5 @@ end
   play :A
   sleep 0.25
   play :F
+  sleep 0.25
 end
