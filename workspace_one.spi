@@ -1,11 +1,11 @@
 loop do
   use_synth :fm
-  play 50
+  play 68
   sleep 0.25
   use_synth :fm
-  play 60 
+  play 80 
   sleep 0.25
   use_synth :fm
-  play 70
+  play 87
   sleep 0.5
 end
