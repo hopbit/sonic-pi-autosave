@@ -16,3 +16,7 @@ end
   play :C
   sleep 1.0
 end
+play :C4
+sleep 0.25
+play :D4
+sleep 0.25
