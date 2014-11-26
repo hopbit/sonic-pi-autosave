@@ -1,4 +1,4 @@
-use_synth :pnoise
+use_synth :pretty_bell
 loop do
   2.times do
     play :F5
