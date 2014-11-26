@@ -13,7 +13,7 @@ end
   sleep 0.5
   play :B
   sleep 0.5
-  play :C4
+  play :C5
   sleep 1.0
 end
 play :C5
