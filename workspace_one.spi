@@ -1,5 +1,5 @@
-play 60, pan: -1
+play :C5, pan: -1
 sleep 1
-play 60, pan: 0
+play :C5, pan: 0
 sleep 1
-play 60, pan: 1
+play :C5, pan: 1
