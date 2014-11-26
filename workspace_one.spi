@@ -1,4 +1,4 @@
-use_synth :bnoise
+use_synth :cnoise
 loop do
   2.times do
     play :F
