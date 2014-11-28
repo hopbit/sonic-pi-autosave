@@ -1,5 +1,1 @@
-with_synth :dsaw do
-  #loop do
-  play 60, relase: 1, amp: 1
-  #end
-end
+play 60, attack: 2
