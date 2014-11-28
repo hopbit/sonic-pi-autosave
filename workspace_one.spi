@@ -1,5 +1,6 @@
+sample :ambi_lunar_land
 loop do
-  sample :ambi_lunar_land
+
   sleep 1
   play 48
   sleep 0.5
