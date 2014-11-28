@@ -1,3 +1,4 @@
 #play 60, attack: 2
 #sleep 3
+use_synth :saw
 play 65, attack: 2, sustain: 1, release: 3, amp: 5
