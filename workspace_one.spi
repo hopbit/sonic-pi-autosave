@@ -1,7 +1,7 @@
 sample :ambi_lunar_land
 loop do
   sleep 0.75
-  sample :perc_bell
+  sample :elec_fuzz_tom
   play 48
   sleep 0.5
   play 36
