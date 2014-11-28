@@ -1,4 +1,4 @@
 #loop do
-play 60, relase: 0.2, amp:4
+play 60, relase: 0.1, amp:4
 sleep 1
 #end
