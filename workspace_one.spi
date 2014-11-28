@@ -2,3 +2,4 @@ with_synth :dsaw do
 #loop do
 play 60, relase: 0.1, amp: 1
 #end
+end
