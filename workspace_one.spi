@@ -1,2 +1,4 @@
-#sample :ambi_lunar_land, amp: 2
+play 36
+play 48
+sample :ambi_lunar_land
 sample :ambi_drone
