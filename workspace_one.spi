@@ -6,7 +6,7 @@
 #
 # Video:  
 
-use_debug false
+use_debug true
 load_samples [:bd_haus, :elec_blip, :ambi_lunar_land]
 
 define :ocean do |num, amp_mul=1|
