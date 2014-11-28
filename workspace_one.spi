@@ -1,4 +1,4 @@
 #play 60, attack: 2
 #sleep 3
 use_synth :tb303
-play 65, attack: 2, sustain: 1, release: 3, amp: 5
+play 65, attack: 1, sustain: 0.5, release: 6, amp: 5
