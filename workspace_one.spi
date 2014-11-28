@@ -1,1 +1,4 @@
+loop
 play 60, relase: 2, amp:6
+sleep 1
+end
