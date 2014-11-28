@@ -4,7 +4,7 @@
 #
 # Coded by Meta-eX
 #
-# Video: https://vimeo.com/110416910
+# Video:  
 
 use_debug false
 load_samples [:bd_haus, :elec_blip, :ambi_lunar_land]
