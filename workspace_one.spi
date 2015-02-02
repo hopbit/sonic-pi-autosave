@@ -1,4 +1,4 @@
-use_synth :zawa
+use_synth :piano
 loop do
   2.times do
     play :F5
