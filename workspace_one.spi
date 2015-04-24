@@ -1,4 +1,4 @@
 live_loop :flibble do
   sample :bd_haus, rate: 1
-  sleep 0.03
+  sleep 0.02
 end
