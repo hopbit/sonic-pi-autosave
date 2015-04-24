@@ -6,5 +6,6 @@ live_loop :syntsh do
   sample :ambi_choir, rate: 0.4
   sleep 0.25
   sample :ambi_choir, rate: 0.7
+  sample :bd_haus, rate: 5
   sleep 0.25
 end
