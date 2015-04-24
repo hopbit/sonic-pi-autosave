@@ -1,93 +1,53 @@
-# Shufflit
+# Monday Blues
 
 # Coded by Sam Aaron
 
 use_debug false
-use_random_seed 667
-load_sample :ambi_lunar_land
-sleep 1
+load_samples [:drum_heavy_kick, :drum_snare_soft]
 
-live_loop :travelling do |idx|
-  with_fx :echo, phase: 0.125, mix: 0.8  do
-    use_synth :beep
-    notes = scale(:e3, :minor_pentatonic, num_octaves: 1)
-    4.times do
-      use_random_seed 67
-      16.times do |idx|
-        sleep 0.25
-        play notes.choose, pulse_width: 0.2, attack: 0, release: 0.1, pan: (range -1, 1, 0.125)[idx], amp: rrand(1, 2)
-      end
-    end
+define :drums do
+  cue :slow_drums
+  6.times do
+    sample :drum_heavy_kick, rate: 0.8
+    sleep 0.5
+  end
+
+  cue :fast_drums
+  8.times do
+    sample :drum_heavy_kick, rate: 0.8
+    sleep 0.125
   end
 end
 
-live_loop :comet, auto_cue: false do
-  if rand < 0.25
-    sample :ambi_lunar_land
-    puts :comet_landing
-  end
-  sleep 8
+define :snare do
+  cue :snare
+  sample :drum_snare_soft
+  sleep 1
 end
 
-live_loop :shuff, auto_cue: false do |idx|
-  with_fx :hpf, cutoff: 10 do |f|
-    8.times do
-      sleep 0.25
-      sample :bd_tek, amp: factor?(idx, 8) ? 6 : 4
-      sleep 0.25
-      use_synth :tb303
-      use_synth_defaults cutoff_attack: 1, cutoff_release: 0, env_curve: 2
-      play (knit :e2, 24, :c2, 8)[idx], release: 1.5, cutoff: (range 70, 90, 1)[idx], depth: 10 , amp: 2 if factor?(idx, 2)
-      sample :sn_dub, rate: -1, sustain: 0, release: (knit 0.05, 3, 0.5, 1)[idx]
-      idx += 1
-    end
-  end
-  idx
-end
- # Shufflit
-
-# Coded by Sam Aaron
-
-use_debug false
-use_random_seed 667
-load_sample :ambi_lunar_land
-sleep 1
-
-live_loop :travelling do |idx|
-  with_fx :echo, phase: 0.125, mix: 0.8  do
-    use_synth :beep
-    notes = scale(:e3, :minor_pentatonic, num_octaves: 1)
-    4.times do
-      use_random_seed 67
-      16.times do |idx|
-        sleep 0.25
-        play notes.choose, pulse_width: 0.2, attack: 0, release: 0.1, pan: (range -1, 1, 0.125)[idx], amp: rrand(1, 2)
-      end
-    end
+define :synths do
+  puts "how does it feel?"
+  use_synth :mod_saw
+  use_synth_defaults amp: 0.5, attack: 0, sustain: 1, release: 0.25, cutoff: 90, mod_range: 12, mod_phase: 0.5
+  notes = [:F, :C, :D, :D, :G, :C, :D, :D]
+  notes.each do |n|
+    play note(n, octave: 1)
+    play note(n, octave: 2)
+    sleep 1
   end
 end
 
-live_loop :comet, auto_cue: false do
-  if rand < 0.25
-    sample :ambi_lunar_land
-    puts :comet_landing
-  end
-  sleep 8
+in_thread(name: :synths) do
+  sleep 6
+  loop{synths}
 end
 
-live_loop :shuff, auto_cue: false do |idx|
-  with_fx :hpf, cutoff: 10 do |f|
-    8.times do
-      sleep 0.25
-      sample :bd_tek, amp: factor?(idx, 8) ? 6 : 4
-      sleep 0.25
-      use_synth :tb303
-      use_synth_defaults cutoff_attack: 1, cutoff_release: 0, env_curve: 2
-      play (knit :e2, 24, :c2, 8)[idx], release: 1.5, cutoff: (range 70, 90, 1)[idx], depth: 10 , amp: 2 if factor?(idx, 2)
-      sample :sn_dub, rate: -1, sustain: 0, release: (knit 0.05, 3, 0.5, 1)[idx]
-      idx += 1
-    end
-  end
-  idx
+in_thread(name: :drums) do
+  loop{drums}
+end
+
+in_thread(name: :snare) do
+  sleep 12.5
+  loop{snare}
 end
  
