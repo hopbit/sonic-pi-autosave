@@ -7,7 +7,7 @@ live_loop :flibble do
 end
 
 live_loop :flibble do
-  sample :drum_snare_hard, rate: 1
+  sample :drum_snare_hard, rate: 0.6
   sleep 0.125
   sample :drum_snare_hard, rate: 1
   sleep 0.125
