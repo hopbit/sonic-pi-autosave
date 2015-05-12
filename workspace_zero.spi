@@ -1,6 +1,6 @@
 #play 70
 play 72
-sleep 0.5
+sleep 0.25
 play 75
-sleep 0.5
+sleep 0.25
 play 79
