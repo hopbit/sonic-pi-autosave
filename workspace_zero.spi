@@ -1,15 +1,13 @@
-play :C
+play :C3
 sleep 0.25
-play :D
+play :D3
 sleep 0.25
-play :E
+play :E3
 sleep 0.25
-play :F
+play :F3
 sleep 0.25
-play :G
+play :G3
 sleep 0.25
-play :A
+play :A3
 sleep 0.25
-play :B
-sleep 0.25
-play (:B + 1)
+play :B3
