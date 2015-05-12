@@ -4,7 +4,7 @@ play :Fs4
 sleep 0.125
 play :Gs4
 sleep 0.125
-play :Hs4
+play :As4
 sleep 0.125
-play :As5
+play :Bs5
 sleep 0.125
