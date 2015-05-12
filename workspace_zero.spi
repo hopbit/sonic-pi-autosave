@@ -1,3 +1,10 @@
 play :Es4
 sleep 0.125
 play :Fs4
+sleep 0.125
+play :Gs4
+sleep 0.125
+play :Hs4
+sleep 0.125
+play :Is4
+sleep 0.125
