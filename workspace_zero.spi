@@ -1,9 +1,9 @@
 #play 70
-play 72
+play 72.5
 sleep 0.125
-play 75
+play 75.5
 sleep 0.125
-play 79
+play 79.5
 sleep 0.5
 play 72
 sleep 0.125
