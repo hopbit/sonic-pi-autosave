@@ -1,22 +1,5 @@
-#play 70
-play 72.5
-sleep 0.125
-play 75.5
-sleep 0.125
-play 79.5
-
-sleep 0.25
-
-play 73.5
-sleep 0.125
-play 76.5
-sleep 0.125
-play 80.5
-
-sleep 0.25
-
-play 74.5
-sleep 0.125
-play 77.5
-sleep 0.125
-play 81.5
+play :C
+sleep 0.5
+play :D
+sleep 0.5
+play :E
