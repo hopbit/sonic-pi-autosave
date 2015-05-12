@@ -10,3 +10,9 @@ sleep 0.125
 play 76.5
 sleep 0.125
 play 80.5
+sleep 0.5
+play 74.5
+sleep 0.125
+play 77.5
+sleep 0.125
+play 81.5
