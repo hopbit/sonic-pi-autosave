@@ -1,5 +1,11 @@
-# Welcome to Sonic Pi v2.1
+sleep 1
 play :C
 sleep 1
-play :C4
+play :D
+sleep 1
+play :E
+sleep 1
+play :F
+sleep 1
+play :G
 sleep 1
