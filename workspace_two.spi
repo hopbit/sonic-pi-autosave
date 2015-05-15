@@ -2,14 +2,14 @@ play :C, amp: 0.5, pan: -1
 sleep 0.25
 play :D, amp: 0.5, pan: -0.75
 sleep 0.25
-play :E, amp: 0.5, pan: 
+play :E, amp: 0.5, pan: -0.5
 sleep 0.25
-play :F, amp: 0.5
+play :F, amp: 0.5, pan: -0.25
 sleep 0.25
-play :G, amp: 0.5
+play :G, amp: 0.5, pan: 0
 sleep 0.25
-play :A, amp: 0.5
+play :A, amp: 0.5, pan: 0.25
 sleep 0.25
-play :B, amp: 0.5
+play :B, amp: 0.5, pan: 0.5
 sleep 0.25
-play :C5, amp: 0.5
+play :C5, amp: 0.5, pan: 0.75
