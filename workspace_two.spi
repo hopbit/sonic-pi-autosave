@@ -1,6 +1,6 @@
-play :C, amp: 0.5
+play :C, amp: 0.5, pan: -1
 sleep 0.25
-play :D, amp: 0.5
+play :D, amp: 0.5, pan: -1
 sleep 0.25
 play :E, amp: 0.5
 sleep 0.25
