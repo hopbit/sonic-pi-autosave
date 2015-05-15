@@ -1,10 +1,10 @@
-play :C
+play :C, amp: 0.1
 sleep 0.5
-play :D
+play :D, amp: 0.2
 sleep 0.5
-play :E
+play :E, amp: 0.3
 sleep 0.5
-play :F
+play :F, amp: 0.4
 sleep 0.5
-play :G
+play :G, amp: 0.5
 sleep 0.5
