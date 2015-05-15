@@ -10,3 +10,5 @@ play :G, amp: 0.5
 sleep 0.5
 play :A, amp: 2
 sleep 0.5
+play :B, amp: 3
+sleep 0.5
