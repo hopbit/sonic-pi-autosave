@@ -5,6 +5,7 @@ live_loop :bass_drumz do
   sample :perc_snap
   sample :bd_klub
   sleep 0.25
+  sample :bd_klub
   sample :guit_em9
   sleep 0.5
 end
