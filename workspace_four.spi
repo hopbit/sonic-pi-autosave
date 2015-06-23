@@ -1,10 +1,10 @@
 live_loop :foo do
-  sample :guit_harmonics, amp: 0.25
   sample :elec_triangle, amp: 0.4
   sleep 0.40625
   sample :elec_snare, amp: 0.2
   sleep 0.40626
   sample :elec_triangle, amp: 0.3
+sample :guit_harmonics, amp: 0.25
   sleep 0.203125
   sample :elec_snare, amp: 0.35
   sleep 0.203125
