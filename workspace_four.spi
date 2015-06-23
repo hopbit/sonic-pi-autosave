@@ -23,7 +23,7 @@ end
 
 live_loop :bar do
   sample :loop_compus
-  sleep 6
+  sleep 6.5
 end
 
 ##sleep 1
