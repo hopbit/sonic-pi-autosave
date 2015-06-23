@@ -12,11 +12,3 @@ live_loop :bar do
   sample :loop_compus, amp: 0.0
   sleep 6.5
 end
-
-##sleep 1
-#sample :perc_bell
-#sleep 1
-#sample :perc_snap
-#sleep 1
-#sample :perc_snap2
-#sleep 1
