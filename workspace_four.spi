@@ -13,7 +13,7 @@
 
 live_loop :melody do
   sample :guit_harmonics
-  sleep 1.75
+  sleep 2
 end
 
 ##sleep 1
