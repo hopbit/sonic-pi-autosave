@@ -11,8 +11,9 @@ live_loop :bass_drumz do
   sleep 0.25
 end
 live_loop :melody do
-  sample :guit_em9
-  sleep 1
+sleep 0.5  
+sample :guit_em9
+  
 end
 
 ##sleep 1
