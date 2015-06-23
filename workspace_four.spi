@@ -17,7 +17,7 @@ live_loop :one do
 end
 
 live_loop :two do
-  sample :loop_compu
+  sample :loop_compus
   sleep 2
 end
 
