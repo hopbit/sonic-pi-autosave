@@ -1,5 +1,5 @@
 live_loop :bass_drumz do
-  sample :bd_gas
+  sample :bd_sone
 sleep 0.5
 end
 
