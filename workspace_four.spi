@@ -8,7 +8,6 @@ live_loop :foo do
   sample :elec_snare, amp: 0.75
   sleep 0.203125
 end
-
 live_loop :bar do
   sample :loop_compus
   sleep 6.5
