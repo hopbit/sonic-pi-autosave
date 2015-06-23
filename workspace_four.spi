@@ -1,11 +1,10 @@
 live_loop :foo do
-  sample :ambi_swoosh, amp: 0.2
+  sample :ambi_swoosh, amp: 0.4
   sample :elec_triangle, amp: 0.4
   sleep 0.40625
   sample :elec_snare, amp: 0.2
   sleep 0.40626
   sample :elec_triangle, amp: 0.3
-  
   sleep 0.203125
   sample :elec_snare, amp: 0.35
   sleep 0.203125
