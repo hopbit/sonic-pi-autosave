@@ -11,9 +11,13 @@
 #  sample :perc_snap
 #end 
 
-live_loop :melody do
+live_loop :one do
   sample :loop_amen
   sleep 1.75
+end
+
+live_loop :two do
+  sample :loop_compus
 end
 
 ##sleep 1
