@@ -17,6 +17,7 @@ live_loop :one do
 end
 
 live_loop :two do
+  sample :elec_triangle
   sample :loop_compus
   sleep 6
 end
