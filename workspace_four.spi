@@ -1,6 +1,6 @@
 live_loop :bass_drumz do
   sample :bd_zum
-sleep 0.5
+sleep 0.4
 end
 
 ##sleep 1
