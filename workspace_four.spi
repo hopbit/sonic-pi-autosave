@@ -1,7 +1,7 @@
 live_loop :foo do
   sample :elec_triangle, amp: 0.1
   sleep 0.40625
-  sample :elec_snare, amp: 0.3
+  sample :elec_snare, amp: 0
   sleep 0.40626
   sample :elec_triangle, amp: 0.1
   sleep 0.203125
