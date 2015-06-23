@@ -15,6 +15,7 @@ live_loop :foo do
 
   sample :elec_snare, amp: 0.35
   sample :elec_bong, amp: 0.35
+  sample :sn_dub, amp: 0.25
   sleep 0.203125
 
 end
