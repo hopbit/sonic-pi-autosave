@@ -1,0 +1,4 @@
+live_loop :foo do
+  play (scale :e3, :minor).tick, release: 0.1
+  sleep 0.125
+end
