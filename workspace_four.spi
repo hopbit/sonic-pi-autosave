@@ -1,8 +1,3 @@
-live_loop :one do
- sample :loop_amen
-  sleep 1.75
-end
-
 live_loop :foo do
   sample :elec_triangle, amp: 0.45
   sleep 0.40625
