@@ -7,12 +7,12 @@ live_loop :foo do
 
   sample :elec_snare, amp: 0.2
   sample :bass_dnb_f, amp: 0.5
-  
+
   sleep 0.40626
 
   sample :elec_triangle, amp: 0.3
   sample :drum_cymbal_open, amp: 0.2
-sample :sn_dub, amp: 0.5
+  sample :sn_dub, amp: 0.4
   sleep 0.203125
 
   sample :elec_snare, amp: 0.35
