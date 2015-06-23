@@ -1,4 +1,6 @@
-sample :bd_zum
+live_loop :bass_drumz do
+  sample :bd_zum
+end
 
 ##sleep 1
 #sample :perc_bell
