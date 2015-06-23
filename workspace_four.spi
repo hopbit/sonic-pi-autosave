@@ -1,5 +1,5 @@
 sample :ambi_lunar_land
-sleep 2
+sleep 3
 play 48
 sleep 0.5
 play 36
