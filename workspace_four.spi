@@ -4,4 +4,4 @@ sample :perc_snap
 sleep 1
 sample :perc_snap2
 sleep 1
-sample :bass_hit_c
+sample :bass_hard_c
