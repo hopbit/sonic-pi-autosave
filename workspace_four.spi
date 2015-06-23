@@ -12,7 +12,7 @@
 #end 
 
 live_loop :melody do
-  sample :guit_harmonics
+  sample :loop_amen
   sleep 2
 end
 
