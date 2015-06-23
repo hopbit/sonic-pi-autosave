@@ -9,6 +9,6 @@ live_loop :foo do
   sleep 0.203125
 end
 live_loop :bar do
-  sample :loop_compus, amp: 0.8
+  sample :loop_compus, amp: 0.9
   sleep 6.5
 end
