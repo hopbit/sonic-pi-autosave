@@ -1,14 +1,14 @@
 live_loop :test do
   use_synth :beep
-  play 38
+  play 60
   sleep 0.25
   #use_synth :dsaw
-  play 50
+  play 61
   sleep 0.25
   #use_synth :prophet
-  play 62
+  play 65
   sleep 0.25
   #use_synth :prophet
-  play 74
+  play 69
   sleep 0.25
 end
