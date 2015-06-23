@@ -16,13 +16,12 @@
 #  sleep 1.75
 #end
 
-live_loop do
+live_loop :foo do
   sample :elec_triangle
   sleep 0.5
 end
 
-live_loop :two do
-
+live_loop :bar do
   sample :loop_compus
   sleep 8
 end
