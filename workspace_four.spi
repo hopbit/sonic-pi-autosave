@@ -1,6 +1,6 @@
 live_loop :foo do
   sample :ambi_piano, amp: 0.35
-  sample :elec_triangle, amp: 0.4
+  #sample :elec_triangle, amp: 0.4
   sample :drum_bass_hard, amp: 0.7
   sleep 0.40625
   sample :elec_snare, amp: 0.2
