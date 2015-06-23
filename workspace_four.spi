@@ -12,7 +12,7 @@
 #end 
 
 live_loop :one do
-  sample :loop_amen
+ # sample :loop_amen
   sleep 1.75
 end
 
