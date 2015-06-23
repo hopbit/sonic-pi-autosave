@@ -1,4 +1,4 @@
-live_loop :bass_drumz do
+/* live_loop :bass_drumz do
   sample :bd_klub
   sample :sn_zome
   sleep 0.25
@@ -9,7 +9,7 @@ live_loop :bass_drumz do
   sample :bd_klub
   sleep 0.25
   sample :perc_snap
-end
+end */
 
 live_loop :melody do
   sample :guit_harmonics
