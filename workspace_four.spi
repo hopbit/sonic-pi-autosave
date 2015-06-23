@@ -1,5 +1,5 @@
 live_loop :test do
-  use_synth :pulse
+  use_synth :beep
 
   play 38
   sleep 0.25
