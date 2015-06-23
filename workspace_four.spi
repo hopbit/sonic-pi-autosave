@@ -11,5 +11,6 @@ live_loop :foo do
 end
 live_loop :bar do
   sample :loop_compus, amp: 1
+  sample :ambi_lunar_land, amp: 0.5
   sleep 6.5
 end
