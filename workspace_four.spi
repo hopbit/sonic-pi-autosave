@@ -18,7 +18,7 @@
 
 live_loop :foo do
   sample :elec_triangle
-  sleep 0.5
+  sleep 0.2
 end
 
 live_loop :bar do
