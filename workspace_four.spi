@@ -1,6 +1,6 @@
 live_loop :bass_drumz do
   sample :bd_klub
-sample :sn_dub
+sample :sn_dolf
 sleep 0.25
 sample :perc_snap
 sample :bd_klub
