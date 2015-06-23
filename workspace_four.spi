@@ -10,10 +10,10 @@ live_loop :bass_drumz do
   sample :bd_klub
   sleep 0.25
 end
+
 live_loop :melody do
-sleep 0.75
-sample :guit_em9
-  
+  sample :guit_harmonics
+  sleep 1
 end
 
 ##sleep 1
