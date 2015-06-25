@@ -1,4 +1,4 @@
-play 70, release: 4
+play 70, release: 8
 sleep 4
 play 70, release: 2
 sleep 2
