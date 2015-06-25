@@ -1,12 +1,1 @@
 play 70, release: 8
-sleep 4
-play 70, release: 2
-sleep 2
-play 70, release: 1
-sleep 1
-play 70, release: 0.5
-sleep 0.5
-play 70, release: 0.25
-sleep 0.25
-play 70, release: 0.125
-sleep 0.125
