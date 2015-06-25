@@ -1,1 +1,7 @@
 play 70, release: 2
+sleep 1
+play 70, release: 1
+sleep 1
+play 70, release: 2
+sleep 1
+play 70, release: 1
