@@ -1,1 +1,1 @@
-play 70, release: 8
+synth :sound_in, amp: 4
