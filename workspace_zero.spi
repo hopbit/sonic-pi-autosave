@@ -1,1 +1,1 @@
-play 70, attack: 0.7, release: 4
+play 60, attack: 0.3, sustain: 1, release: 1
