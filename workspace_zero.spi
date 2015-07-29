@@ -1,4 +1,4 @@
 live_loop :foo do
   sample :ambi_piano
   sleep 1
-endn
+end
