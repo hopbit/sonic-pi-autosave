@@ -1,6 +1,6 @@
 live_loop :foo do
   sample :bd_fat, amp: 1.5
-  sample :bass_drop_c, amp: 0.5
+  sample :bass_drop_c, amp: 0.25
   sleep 0.25
   play 70, release: 0.2, amp: 1
   sleep 0.25
