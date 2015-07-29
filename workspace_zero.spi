@@ -1,6 +1,6 @@
 live_loop :foo do
   play 70, release: 0.2
   sleep 0.25
-  sample :bd_klub
-sleep 0.25, amp: 1.5
+  sample :bd_klub, amp: 1.5
+sleep 0.25
 end
