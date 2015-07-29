@@ -1,4 +1,4 @@
 live_loop :foo do
   play 70, release: 0.2
-  sleep 0.125
+  sleep 0.5
 end
