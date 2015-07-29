@@ -1,3 +1,3 @@
-live_loop :foo
-sample :ambi_piano
+live_loop :foo do
+  sample :ambi_piano
 end
