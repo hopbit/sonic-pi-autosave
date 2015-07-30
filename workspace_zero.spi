@@ -1,8 +1,8 @@
 sample :ambi_lunar_land
 sleep 1
-play 88
+play 88, amp: 0.5
 sleep 0.5
-play 76
+play 76, amp: 0.5
 sample :ambi_drone
 sleep 1
-play 76
+play 76, amp: 0.5
