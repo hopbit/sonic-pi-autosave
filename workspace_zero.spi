@@ -3,6 +3,6 @@ use_synth :tb303
 live_loop :ex do
   #  play choose(chord(:E3, :minor)), release: 0.3, cutoff: rrand(60, 120)
   play :E3
-  play :minor
+  # play :minor
   sleep 0.25
 end
