@@ -1,4 +1,4 @@
 live_loop :test do
-  sample :bd_boom
+  sample :bd_fat
   sleep 0.54
 end
