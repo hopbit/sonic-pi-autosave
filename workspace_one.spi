@@ -5,8 +5,6 @@ end
 
 live_loop :ziom do
   sync :techno
-  sleep 0.25
-  
-  sleep 0.25
 sample :perc_snap, amp: 0.25
+  sleep 0.25
 end
