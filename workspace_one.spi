@@ -1,4 +1,4 @@
 live_loop :techno do
 sample :bd_tek
-sleep 0.5t
+sleep 0.5
 end
