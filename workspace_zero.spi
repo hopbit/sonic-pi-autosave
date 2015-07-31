@@ -1,7 +1,7 @@
 s = play 70, release: 5
-sleep 0.5
+sleep 0.25
 control s, note: 65
-sleep 0.5
+sleep 0.25
 control s, note: 67
-sleep 3
+sleep 1.5
 control s, note: 72
