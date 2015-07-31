@@ -1,4 +1,4 @@
 live_loop :test do
-  sample :bd_808
+  sample :bd_ada
   sleep 0.54
 end
