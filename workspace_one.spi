@@ -1,12 +1,22 @@
 live_loop :tecno do
   sample :bd_haus
-  sleep 0.27 # 1 
-sleep 0.27 # i 
- sleep 0.27 # 2 
-sleep 0.27 # i
-sleep 0.27 # 3 
-sleep 0.27 # i 
-sleep 0.27 # 4 
-sleep 0.27 # i 
-  
+  sleep 0.27 # 1
+
+  sleep 0.27 # i
+
+  sample :bd_haus
+  sleep 0.27 # 2
+
+  sleep 0.27 # i
+
+  sample :bd_haus
+  sleep 0.27 # 3
+
+  sleep 0.27 # i
+
+  vsample :bd_haus
+  sleep 0.27 # 4
+
+  sleep 0.27 # i
+
 end
