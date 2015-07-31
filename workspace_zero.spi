@@ -11,8 +11,8 @@ end
 
 define :player do |base, oct, syn|
   use_synth syn
-  dur = choose(knit(0.125, 8, 0.25, 4, 0.5, 1))
-  play scale(base, :phrygian, num_octaves: oct).choose, release: dur*1.3, amp: 0.5
+  dur = (knit(0.125, 8, 0.25, 4, 0.5, 1)).choose
+  play choose(scale(base, :phrygian, num_octaves: oct)), release: dur*1.3, amp: 0.5
   sleep dur
 end
 
