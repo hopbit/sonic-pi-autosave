@@ -1,3 +1,4 @@
 live_loop :test do
   sample :elec_flip
+sleep 0.5
 end
