@@ -23,8 +23,7 @@ end
 
 live_loop :guitar do 
   sync :drums
-  sleep 0.54
+  sleep 1.08
   sample :guit_harmonics
-  sleep 1.62
-
+  sleep 3.24
 end
