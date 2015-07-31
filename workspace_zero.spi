@@ -1,5 +1,4 @@
 live_loop :wow do
-  
-  sample :ambi_glass_hum
+  sample :ambi_glass_hum, amp: 1.5
   sleep 2
 end
