@@ -5,7 +5,8 @@ end
 
 live_loop :percussion do
   sync :drum
-  sample :perc_snap
+  
 sleep 0.27
+sample :perc_snap
 sleep 0.27
 end
