@@ -1,1 +1,4 @@
-sample :ambi_soft_buzz, amp: 2
+live_loop do
+  sample :ambi_soft_buzz, amp: 2
+  sleep 0.5
+end
