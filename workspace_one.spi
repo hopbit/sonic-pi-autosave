@@ -1,4 +1,4 @@
 live_loop :test do
-  sample :misc_rand_noise
+  sample :bd_808
   sleep 0.54
 end
