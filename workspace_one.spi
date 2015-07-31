@@ -2,7 +2,8 @@ live_loop :test do
   puts "hello"
   sample :elec_flip
   sleep 0.54
-sample :elec_flip
+sample :perc_bell
+#sample :elec_flip
   sleep 0.54
 sample :elec_flip
   sleep 0.54
