@@ -1,6 +1,6 @@
 live_loop :test do
   sample :elec_flip
-sample :guit_e_fifths
+sample :guit_e_slide
   #sleep 0.27
   sample :elec_flip
   sleep 0.54
