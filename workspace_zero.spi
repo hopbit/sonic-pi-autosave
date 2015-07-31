@@ -2,5 +2,7 @@ live_loop :wow do
   sample :ambi_soft_buzz, amp: 1
   sleep 1
   sample :ambi_swoosh
-sleep 2
+  sleep 2
+  sample :ambi_drone
+sleep 1
 end
