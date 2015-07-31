@@ -3,12 +3,12 @@ live_loop :tecno do
   sleep 0.27 # 1
 
   sleep 0.27 # i
-  sample :perc_snap2
+  sample :perc_snap2, amp: 0.5
   sample :bd_haus
   sleep 0.27 # 2
 
   sleep 0.27 # i
-
+  sample :perc_snap2, amp: 0.5
   sample :bd_haus
   sleep 0.27 # 3
 
