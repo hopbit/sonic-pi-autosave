@@ -2,7 +2,6 @@ live_loop :test do
   sample :elec_flip
 
   sleep 0.54
-  sample :guit_harmonics
   sample :elec_flip
   sleep 0.54
 
