@@ -10,7 +10,7 @@ live_loop :percussion do
 end
 
 live_loop :melody do 
-sleep 1.62
+sleep 1.08
   sample :ambi_piano
 
 end 
