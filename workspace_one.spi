@@ -1,7 +1,8 @@
 live_loop :tecno do
   sleep 0.54
   sample :bd_haus
-sleep 0.54
-sleep 0.54
-sleep 0.54
+  sleep 0.54
+  sample :sn_dolf
+  sleep 0.54
+  sleep 0.54
 end
