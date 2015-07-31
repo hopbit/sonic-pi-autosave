@@ -1,9 +1,10 @@
-live_loop :drum do
+live_loop :drums do
   sample :bd_haus
   sleep 0.54
 end
 
 live_loop :percussion do
-  sleep 0.27
+sync :drums  
+sleep 0.27
   sample :perc_snap
 end
