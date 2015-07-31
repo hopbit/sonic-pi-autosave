@@ -1,4 +1,4 @@
-use_synth :beep
+use_synth :tri
 live_loop :ex do
   play chord(:E3, :minor).choose, release: 0.3, cutoff: rrand(70, 90)
   sleep 0.25
