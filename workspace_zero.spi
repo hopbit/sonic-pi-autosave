@@ -2,5 +2,5 @@ live_loop :wow do
   sample :ambi_choir
   sleep 1
   sample :ambi_dark_woosh
-  sleep 1
+  sleep 3
 end
