@@ -1,4 +1,4 @@
-#live_loop :techno do
+live_loop :techno do
   sample :bd_tek
   sleep 0.5
   sample :sn_zome, amp: 0.25
@@ -10,4 +10,4 @@
   sample :bd_tek
   sleep 0.25
   sample :sn_zome, amp: 0.25
-#end
+end
