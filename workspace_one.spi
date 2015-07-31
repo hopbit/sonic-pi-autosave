@@ -3,4 +3,9 @@ live_loop :drum do
   sleep 0.54
 end
 
-live_loop
+live_loop :percussion do
+  sync :drum
+  sample :perc_snap
+sleep 0.27
+sleep 0.27
+end
