@@ -7,6 +7,5 @@ live_loop :techno do
   sync :techno
 sample :perc_snap, amp: 0.25
   sleep 0.25
-  
-  sleep 0.25
+ 
 end
