@@ -5,6 +5,5 @@ end
 
 live_loop :percussion do
   sleep 0.27
-  sleep 0.27
   sample :perc_snap
 end
