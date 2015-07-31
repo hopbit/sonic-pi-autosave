@@ -5,6 +5,5 @@ end
 
 live_loop :percussion do
   sync :drums
-  
   sample :perc_snap
 end
