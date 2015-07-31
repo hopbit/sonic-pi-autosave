@@ -1,4 +1,6 @@
-live_loop :test do
+live_loop :drum do
   sample :bd_haus
   sleep 0.54
 end
+
+live_loop
