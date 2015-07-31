@@ -1,29 +1,7 @@
-live_loop :drums do
-  sample :bd_haus
+live_loop :tecno do
   sleep 0.54
-end
-
-live_loop :percussion do
-  sync :drums
-  sample :perc_snap
-  sleep 1.08
-end
-
-live_loop :piano do 
-  sleep 2.16
-  sample :ambi_piano
-end 
-
-live_loop :bass do 
-  sync :drums
-  sleep 2.16
-  sample :bass_dnb_f, amp: 0.75
-  sleep 2.16
-end 
-
-live_loop :guitar do 
-  sync :drums
-  sleep 1.08
-  sample :guit_harmonics
-  sleep 3.24
+  sample :bd_haus
+sleep 0.54
+sleep 0.54
+sleep 0.54
 end
