@@ -6,6 +6,6 @@ live_loop :tecno do
   sleep 0.27
   sample :bd_haus
   sleep 0.27
-  sample: bd_haus
+  sample :bd_haus
   sleep 0.54
 end
