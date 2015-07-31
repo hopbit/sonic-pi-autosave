@@ -3,4 +3,6 @@ live_loop :wow do
   sleep 1
   sample :ambi_dark_woosh
   sleep 3
+  sample :ambi_drone
+sleep 1
 end
