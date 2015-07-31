@@ -1,5 +1,6 @@
 live_loop :test do
   sample :elec_flip
+sample :guit_e_fifths
   #sleep 0.27
   sample :elec_flip
   sleep 0.54
@@ -11,5 +12,4 @@ live_loop :test do
   #sample :elec_flip
   sample :perc_snap, amp: 0.5
   sleep 0.54
-
 end
