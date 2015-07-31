@@ -6,7 +6,7 @@ live_loop :wow do
   sample :ambi_drone
   sleep 5
   sample :ambi_glass_hum
-  sleep 2
+  sleep 4
   sample :ambi_glass_rub
   sleep 2
 end
