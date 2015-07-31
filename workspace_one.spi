@@ -8,3 +8,8 @@ live_loop :percussion do
   sample :perc_snap
   sleep 1.08
 end
+
+live_loop :melody do 
+  sample :ambi_piano
+sleep 2.16
+end 
