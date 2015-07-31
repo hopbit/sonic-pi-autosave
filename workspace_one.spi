@@ -17,5 +17,5 @@ end
 live_loop :guitar do 
   sync :drums
   sample :bass_dnb_f, amp: 0.75
-  sleep 2.54
+  sleep 2.25
 end 
