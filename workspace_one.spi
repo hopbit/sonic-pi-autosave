@@ -1,10 +1,11 @@
 live_loop :test do
   sample :elec_flip
-  sample :guit_harmonics
+  
   sleep 0.54
   sample :elec_flip
   sleep 0.54
-  sample :perc_snap2, amp: 0.5
+sample :guit_harmonics  
+sample :perc_snap2, amp: 0.5
   sample :elec_flip
   sleep 0.54
   sample :elec_flip
