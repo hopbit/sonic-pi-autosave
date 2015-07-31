@@ -14,9 +14,16 @@ live_loop :piano do
   sample :ambi_piano
 end 
 
-live_loop :guitar do 
+live_loop :bass do 
   sync :drums
   sleep 2.16
   sample :bass_dnb_f, amp: 0.75
   sleep 2.16
 end 
+
+live_loop :guitar do 
+  sleep 0.54
+  sample :guit_harmonics
+  
+
+end
