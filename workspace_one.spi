@@ -1,4 +1,4 @@
 live_loop :test do
-  sample :drum_bass_hard
+  sample :misc_burp
   sleep 0.54
 end
