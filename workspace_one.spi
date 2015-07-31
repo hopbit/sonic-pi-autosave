@@ -1,4 +1,4 @@
 live_loop :test do
-  sample :misc_burp
+  sample :misc_rand_noise
   sleep 0.54
 end
