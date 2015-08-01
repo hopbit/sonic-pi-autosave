@@ -1,3 +1,4 @@
+use_synth :blade
 live_loop :costam do
 sync :techno
 play :C, amp: 1, pan: -1
