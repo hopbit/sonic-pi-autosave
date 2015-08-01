@@ -1,4 +1,4 @@
-use_synth :blade
+use_synth :pretty_bell
 live_loop :costam do
   sync :techno
   play :C, amp: 1, pan: -1
@@ -16,5 +16,5 @@ live_loop :costam do
   play :B, amp: 1, pan: 0.5
   sleep 0.25
   play :C5, amp: 1, pan: 0.75
-
+  stop
 end
