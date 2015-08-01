@@ -1,3 +1,4 @@
+live_loop :costam do
 play :C, amp: 0.5, pan: -1
 sleep 0.25
 play :D, amp: 0.5, pan: -0.75
@@ -13,3 +14,4 @@ sleep 0.25
 play :B, amp: 0.5, pan: 0.5
 sleep 0.25
 play :C5, amp: 0.5, pan: 0.75
+end
