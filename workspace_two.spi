@@ -16,5 +16,5 @@ live_loop :costam do
   #play :B, amp: 0.5, pan: 0.5
   #sleep 0.25
   #play :C5, amp: 0.5, pan: 0.75
-stop
+
 end
