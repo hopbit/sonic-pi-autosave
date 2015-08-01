@@ -1,3 +1,2 @@
 sample :loop_amen, pan: -1
-sleep 0.878
 sample :loop_amen, pan: 1
