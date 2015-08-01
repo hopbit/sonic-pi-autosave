@@ -1,1 +1,1 @@
-notes = (scale :e1, :minor_pentatonic, num_octaves: 2).shuffle.
+play choose(chord(:E3, :minor)), release: 0.3, cutoff: rrand(60, 120)
