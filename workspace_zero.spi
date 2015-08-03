@@ -1,1 +1,11 @@
-sample :ambi_choir
+use_synth :tri
+  live_loop :slur do
+    s=play :c4,sustain: 0.8,release: 0.05
+    sleep 0.2
+    control s, note: :d4,note_slide: 0.01
+    sleep 0.2
+    control s, note: :e4,note_slide: 0.01
+    sleep 0.2
+    control s, note: :f4,note_slide: 0.01
+    sleep 0.4#includes rest of 0.2
+  end
