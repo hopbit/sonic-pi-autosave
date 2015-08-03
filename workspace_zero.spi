@@ -59,8 +59,8 @@ define :amen do
   # again make sure only one of these lines is active to avoid ensuing craziness
   #sample :loop_amen_full, amp: 0.5, rate: ar
   #sample :loop_amen_full, amp: 0.5, rate: -ar
-  #sample :loop_amen_full, amp: 0.5, rate: ar/2
-  sample :loop_amen_full, amp: 0.5, rate: [ar, ar/2].choose if rand < 0.5
+  sample :loop_amen_full, amp: 0.5, rate: ar/2
+  #sample :loop_amen_full, amp: 0.5, rate: [ar, ar/2].choose if rand < 0.5
   #sample :loop_amen_full, amp: 0.5, start: 0.5, rate: -ar; sleep dur / 2
 end
 
