@@ -7,7 +7,8 @@ end
 
 #comment
 live_loop :ll do
-  sync :jj
+stop 
+ sync :jj
   sample :elec_bell, amp: 2.5
   sleep 3.0
 end
