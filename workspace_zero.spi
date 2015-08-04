@@ -1,14 +1,13 @@
 live_loop :jj do
-  
-#sample :loop_breakbeat, rate: 1.25, amp: 4
+  #sample :loop_breakbeat, rate: 1.25, amp: 4
   sleep 1.5
   use_synth :dsaw
   play 20, amp: 1
 end
 
 live_loop :ll do
-#stop 
- sync :jj
+  stop
+  sync :jj
   sample :elec_bell, amp: 2.5
   sleep 3.0
 end
