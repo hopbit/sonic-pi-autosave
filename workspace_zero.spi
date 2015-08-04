@@ -12,6 +12,7 @@ live_loop :ll do
   sleep 3.0
 end
 
+comment
 live_loop :kk do
   synth :jj
   use_synth :tb303
