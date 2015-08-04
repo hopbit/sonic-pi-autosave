@@ -9,7 +9,9 @@ live_loop :ll do
   #stop
   sync :jj
   sample :elec_bell, amp: 0.5
-  sleep 3.0
+  sleep 1.5
+sample :elec_bell, amp: 0.5
+  sleep 1.5
 end
 
 
