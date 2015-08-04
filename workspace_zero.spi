@@ -14,7 +14,7 @@ end
 
 
 live_loop :kk do
-  stop
+  #stop
   synth :jj
   use_synth :dsaw
   play 65, amp: 0.5
