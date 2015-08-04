@@ -1,4 +1,4 @@
 live_loop :jj do
   sample :loop_amen, rate: 1
-  sleep 3.25
+  sleep 3
 end
