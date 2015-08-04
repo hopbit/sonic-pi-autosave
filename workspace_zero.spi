@@ -16,7 +16,7 @@ end
 live_loop :kk do
   #stop
   synth :jj
-  sample :guit_e_fifths, rate: 2.7, amp: 0.55
+  sample :guit_e_fifths, rate: 2.7, amp: 0.25
   sleep 3.0
   sample :guit_e_fifths, rate: 2.5, amp: 0.25
   sleep 3.0
