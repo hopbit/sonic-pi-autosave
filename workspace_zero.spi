@@ -5,7 +5,6 @@ live_loop :jj do
   play 20, amp: 1
 end
 
-#comment
 live_loop :ll do
 stop 
  sync :jj
