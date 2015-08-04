@@ -16,13 +16,13 @@ end
 live_loop :kk do
   stop
   synth :jj
-  use_synth :tb303
-  play 65
+  use_synth :dsaw
+  play 65, amp: 0.5
   sleep 0.4375
-  play 66
+  play 66, amp: 0.5
   sleep 0.4375
-  play 57
+  play 57, amp: 0.5
   sleep 0.4375
-  play 62
+  play 62, amp: 0.5
   sleep 0.4375
   end
