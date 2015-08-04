@@ -10,15 +10,14 @@ live_loop :ll do
   sync :jj
   sample :elec_bell, amp: 0.5
   sleep 3
-
 end
 
 
 live_loop :kk do
-  stop
+  #stop
   synth :jj
   sleep 3.0
-  sample :guit_e_fifths, rate: 2.7, amp: 0.25
+  sample :guit_e_fifths, rate: 2.7, amp: 0.15
   sleep 3.0
-  sample :guit_e_fifths, rate: 2.5, amp: 0.25
+  sample :guit_e_fifths, rate: 2.5, amp: 0.15
 end
