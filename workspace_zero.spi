@@ -4,3 +4,9 @@ live_loop :jj do
   use_synth :dsaw
   play 10, amp: 1
 end
+
+live_loop :ll do
+  sync :jj
+  sample :elec_bell, amp: 0.25
+  sleep 1
+end
