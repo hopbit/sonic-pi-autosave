@@ -5,8 +5,16 @@ live_loop :jj do
   play 20, amp: 1
 end
 
+#comment
 live_loop :ll do
   sync :jj
   sample :elec_bell, amp: 2.5
   sleep 3.0
+end
+
+live_loop :kk do
+  synth :jj
+  use_synth :tb303
+  play 70
+  sleep 
 end
