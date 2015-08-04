@@ -1,7 +1,6 @@
-
 live_loop :jj do
   sample :loop_breakbeat, rate: 1.25, amp: 4
   sleep 1.5
-use_synth :bnoise  
-  play 75
+  use_synth :bnoise
+  play 80
 end
