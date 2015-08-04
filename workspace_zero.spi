@@ -1,4 +1,4 @@
 live_loop :jj do
-  sample :loop_breakbeat, rate: 0.5, amp: 4
-  sleep 3.8
+  sample :loop_breakbeat, rate: 1.5, amp: 4
+  sleep 1.2333
 end
