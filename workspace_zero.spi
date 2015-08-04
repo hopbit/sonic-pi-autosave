@@ -15,6 +15,12 @@ end
 live_loop :kk do
   synth :jj
   use_synth :tb303
-  play 70
-  sleep 
+  play 65
+  sleep 0.4375
+  play 66
+  sleep 0.4375
+  play 57
+  sleep 0.4375
+  play 62
+  sleep 0.4375
 end
