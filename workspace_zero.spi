@@ -14,7 +14,7 @@ end
 
 
 live_loop :kk do
-stop
+  stop
   synth :jj
   use_synth :tb303
   play 65
@@ -25,4 +25,4 @@ stop
   sleep 0.4375
   play 62
   sleep 0.4375
-#end
+  end
