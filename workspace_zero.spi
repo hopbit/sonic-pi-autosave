@@ -2,5 +2,5 @@ live_loop :jj do
   sample :loop_breakbeat, rate: 1.25, amp: 4
   sleep 1.5
   use_synth :dsaw
-  play 10, amp: 0.5
+  play 10, amp: 1
 end
