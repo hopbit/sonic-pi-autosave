@@ -21,7 +21,7 @@ end
 live_loop :beat do
   sync :melody
   sample :drum_heavy_kick
-  sleep 1
-  sample :sn_dolf
+  sleep
+  sample :sn_zome
   sleep 3
 end
