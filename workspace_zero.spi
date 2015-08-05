@@ -43,6 +43,6 @@ end
 
 live_loop :cyk do
   #stop
-  sleep 0.1
+  sleep 0.8
 sample :drum_cymbal_pedal
 end
