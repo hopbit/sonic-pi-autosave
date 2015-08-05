@@ -42,7 +42,7 @@ end
 
 live_loop :cyk do
   sync :snares
-  stop
+  #stop
   sample :drum_cymbal_pedal
   sleep 0.2
 end
