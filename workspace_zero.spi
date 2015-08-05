@@ -4,7 +4,7 @@ live_loop :melody do
   use_synth :piano
   play :D5
   sleep 0.2
-  play :C5
+  #play :C5
   sleep 0.2
   play :E5
   sleep 0.2
@@ -14,9 +14,9 @@ live_loop :melody do
   sleep 0.2
   play :F5
   sleep 0.2
-  play :B4
+  play :C6
   sleep 0.2
-  #play :C6
+  play :B5
   sleep 0.2
 end
 
