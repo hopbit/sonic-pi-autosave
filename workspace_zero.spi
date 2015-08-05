@@ -22,7 +22,7 @@ end
 
 live_loop :drums do
   #stop
-  sync :snares
+  sync :cyk
   sample :drum_heavy_kick
   sleep 0.8
   sample :bd_haus
