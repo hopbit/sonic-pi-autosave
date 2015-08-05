@@ -21,8 +21,8 @@ live_loop :melody do
 end
 
 live_loop :drums do
-stop  
-sync :snares
+  stop
+  sync :snares
   sample :drum_heavy_kick
   sleep 0.4
   #sample :sn_zome
@@ -36,8 +36,10 @@ sync :snares
 end
 
 live_loop :snares do
-stop  
-sleep 0.4
+  sync :cyk
+  stop
+
+  sleep 0.4
   sample :sn_zome
   sleep 0.4
   #sample :bd_haus
@@ -48,17 +50,8 @@ sleep 0.4
   sleep 0.4
 end
 
-live_loop :hihiats do
-stop  
-sync :snares
-  #sample :drum_heavy_kick
+live_loop :cyk do
+  stop
+  sample :drum_cymbal_pedal
   sleep 0.2
-  sample :sn_zome
-  sleep 0.4
-  #sample :bd_haus
-  sleep 0.2
-  #sample :bd_haus
-  sleep 0.2
-  sample :sn_zome
-  sleep 0.4
 end
