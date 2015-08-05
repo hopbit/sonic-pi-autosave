@@ -20,7 +20,7 @@ stop
 end
 
 live_loop :beat do
-  sync :melody
+  #sync :melody
   sample :drum_heavy_kick
   sleep 0.5
   sample :sn_zome
