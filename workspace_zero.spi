@@ -1,5 +1,5 @@
 live_loop :melody do
-  stop
+  #stop
   sync :snares
   use_synth :piano
   play :C5
