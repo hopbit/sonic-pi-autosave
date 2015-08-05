@@ -21,13 +21,13 @@ end
 
 live_loop :beat do
   #sync :melody
-  sample :drum_heavy_kick
+  #sample :drum_heavy_kick
   sleep 0.4
   sample :sn_zome
   sleep 0.4
-  sample :bd_haus
+  #sample :bd_haus
   sleep 0.2
-  sample :bd_haus
+  #sample :bd_haus
   sleep 0.2
   sample :sn_zome
   sleep 0.4
