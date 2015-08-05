@@ -2,13 +2,13 @@ live_loop :melody do
   sync :cyk
   #stop
   use_synth :piano
-  play :D5
+  #play :D5
   sleep 0.2
   #play :C5
   sleep 0.2
   play :E5
   sleep 0.2
-  #play :F5
+  play :F5
   sleep 0.2
   #play :G4
   sleep 0.2
