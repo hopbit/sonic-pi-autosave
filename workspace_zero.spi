@@ -10,9 +10,9 @@ live_loop :melody do
   sleep 0.2
   #play :F5
   sleep 0.2
-  play :G4
+  #play :G4
   sleep 0.2
-  #play :A5
+  play :A5
   sleep 0.2
   play :B4
   sleep 0.2
