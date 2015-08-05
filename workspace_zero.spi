@@ -1,5 +1,5 @@
 use_synth :piano
-live_loop :piano_loop do 
+live_loop :p do 
   play :C4
   sleep 1
 end
