@@ -1,4 +1,4 @@
-use_synth :piano
+use_synth :growl
 live_loop :p do
   play :C4
   sleep 0.5
