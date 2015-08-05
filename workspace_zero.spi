@@ -1,5 +1,5 @@
 live_loop :melody do
-stop
+  #stop
   use_synth :piano
   play :C4
   sleep 0.2
@@ -20,7 +20,7 @@ stop
 end
 
 live_loop :beat do
-  #sync :melody
+  sync :melody
   sample :drum_heavy_kick
   sleep 0.4
   sample :sn_zome
