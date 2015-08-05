@@ -1,5 +1,5 @@
-use_synth :piano
-live_loop :p do
+live_loop :melody do
+  use_synth :piano
   play :C4
   sleep 0.5
   play :D4
@@ -16,4 +16,10 @@ live_loop :p do
   sleep 0.5
   play :C5
   sleep 0.5
+end
+
+live_loop :beat do 
+  sync :melody
+  sample :drum_heavy_kick
+  sleep 4
 end
