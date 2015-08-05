@@ -21,8 +21,9 @@ live_loop :melody do
 end
 
 live_loop :drums do
-  stop
   sync :cyk
+  stop
+
   sample :drum_heavy_kick
   sleep 0.8
   sample :bd_haus
