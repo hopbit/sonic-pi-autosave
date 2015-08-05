@@ -29,6 +29,6 @@ live_loop :beat do
   sleep 0.2
   #sample :bd_haus
   sleep 0.2
-  #sample :sn_zome
+  sample :sn_zome
   sleep 0.4
 end
