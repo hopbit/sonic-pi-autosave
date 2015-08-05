@@ -14,7 +14,7 @@ live_loop :melody do
   sleep 0.2
   play :F5
   sleep 0.2
-  #play :B4
+  play :B4
   sleep 0.2
   #play :C6
   sleep 0.2
