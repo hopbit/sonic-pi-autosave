@@ -1,4 +1,0 @@
-live_loop :cyk do
-  sample :drum_cymbal_pedal
-sleep 0.2
-end
