@@ -1,5 +1,5 @@
 live_loop :melody do
-  #stop
+  stop
   sync :cyk
   use_synth :piano
   play :C5
@@ -22,7 +22,7 @@ end
 
 live_loop :drums do
   sync :cyk
-  #stop
+  stop
   sample :drum_heavy_kick
   sleep 0.8
   sample :bd_haus
@@ -33,7 +33,7 @@ end
 
 live_loop :snares do
   sync :cyk
-  #stop
+  stop
   sleep 0.4
   sample :sn_zome
   sleep 0.8
