@@ -1,5 +1,5 @@
 live_loop :melody do
-  stop
+  #stop
   sync :cyk
   use_synth :piano
   play :C5
@@ -43,9 +43,6 @@ end
 
 live_loop :cyk do
   #stop
-
   sample :drum_cymbal_pedal
   sleep 0.2
-
-
 end
