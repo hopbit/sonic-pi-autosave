@@ -18,10 +18,10 @@ live_loop :melody do
   sleep 0.5
 end
 
-live_loop :beat do 
+live_loop :beat do
   sync :melody
   sample :drum_heavy_kick
-  sleep 2
-  sample :drum_snare_hard
-  sleep 2 
+  sleep 1
+  sample :drum_snare_soft
+  sleep 3
 end
