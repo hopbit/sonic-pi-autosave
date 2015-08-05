@@ -22,6 +22,6 @@ live_loop :beat do
   sync :melody
   sample :drum_heavy_kick
   sleep 1
-  sample :drum_snare_soft
+  sample :sn_dolf
   sleep 3
 end
