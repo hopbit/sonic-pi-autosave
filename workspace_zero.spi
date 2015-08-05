@@ -1,4 +1,4 @@
-use_synth :dull_bell
+use_synth :piano
 live_loop :p do
   play :C4
   sleep 0.5
