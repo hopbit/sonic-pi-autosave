@@ -1,1 +1,1 @@
-play_pattern_timed([:e6,:e6,nil,:e6,nil,:c6,:e6,nil,:g6], [0.25])
+play_pattern_timed([:e5,:e5,nil,:e5,nil,:c5,:e5,nil,:g5], [0.25])
