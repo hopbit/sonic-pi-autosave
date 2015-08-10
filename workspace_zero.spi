@@ -1,7 +1,7 @@
 # play_pattern_timed([:e6,:e6,nil,:e6,nil,:c6,:e6,nil,:g6], [0.25])
 play :e5
 sleep 0.25
-play :e5
+# play :e5
 sleep 0.25
 # nil
 sleep 0.25
