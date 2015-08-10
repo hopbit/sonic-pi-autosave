@@ -1,3 +1,4 @@
 live_loop :foo do
   play_pattern_timed([:e5,:e5,nil,:e5,nil,:c5,:e5,nil,:g5], [0.25])
+  sleep 0.5
 end
