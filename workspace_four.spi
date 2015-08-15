@@ -1,1 +1,27 @@
-puts "hello"
+live_loop :foo do
+
+  sample :ambi_piano, amp: 0.35
+  sample :drum_bass_hard, amp: 1
+
+  sleep 0.40625
+
+  sample :elec_snare, amp: 0.2
+  sample :bass_dnb_f, amp: 0.5
+
+  sleep 0.40626
+
+  sample :elec_triangle, amp: 0.3
+  sample :drum_cymbal_open, amp: 0.2
+  sample :sn_dub, amp: 0.4
+  sleep 0.203125
+
+  sample :elec_snare, amp: 0.35
+  sample :elec_bong, amp: 0.35
+  sleep 0.203125
+
+end
+live_loop :bar do
+  sample :loop_compus, amp: 1
+  sample :ambi_lunar_land, amp: 0.5
+  sleep 6.5
+end
