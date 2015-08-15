@@ -1,13 +1,13 @@
 live_loop :drums do
   puts "slow drums"
   6.times do
-    sample :drum_heavy_kick, rate: 0.8
+    sample :bd_haus, rate: 0.8
     sleep 0.5
   end
 
   puts "fast drums"
   8.times do
-    sample :drum_heavy_kick, rate: 0.8
+    sample :bd_haus, rate: 0.8
     sleep 0.125
   end
 end
