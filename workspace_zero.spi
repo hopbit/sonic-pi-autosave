@@ -1,4 +1,4 @@
-density 2 do
+density 3 do
   sample :bd_haus
   sleep 0.5
 end
