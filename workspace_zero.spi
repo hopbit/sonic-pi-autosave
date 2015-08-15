@@ -1,6 +1,6 @@
 #print sample_duration :drum_cymbal_open
 
 live_loop :foo do
-  sample :drum_cymbal_open#, sustain: 0, release: 0.75#, attack: 0.75,
+  sample :drum_cymbal_open, attack: 0.01, sustain: 0, release: 0.1
   sleep 1.80
 end
