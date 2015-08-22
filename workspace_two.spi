@@ -2,5 +2,9 @@ load_snippets("C:/Users/hoppbit/.sonic-pi/snippets")
 
 
 #with_fx :bitcrusher do
-  play 70, attack: 1, decay: 1, sustain: 1, release: 1
+  #play 70, attack: 1, decay: 1, sustain: 1, release: 1
 #end
+
+with_fx :reverb do
+  play 70, attack: 1, decay: 1, sustain: 1, release: 1
+end
