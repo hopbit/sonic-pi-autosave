@@ -1,2 +1,2 @@
-n = 1
+n = 0.5
 invert_chord(chord(:c4,"1"),n)
