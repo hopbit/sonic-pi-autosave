@@ -1,6 +1,6 @@
 # Sonic Pi Tutorial 3.6
 live_loop :foo do
   sample "C:/Users/hoppbit/Desktop/my-sound.mp3"
-# C:\Users\hoppbit\Desktop
-sleep 1
+  # C:\Users\hoppbit\Desktop
+  sleep 1
 end
