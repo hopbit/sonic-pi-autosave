@@ -2,4 +2,5 @@
 # 4 - Randomisation
 live_loop :foo do
   play rrand(50, 100)
+  sleep 0.5
 end
