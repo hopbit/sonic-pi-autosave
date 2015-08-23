@@ -1,2 +1,1 @@
-# Sonic Pi Tutorial 3.5
-sample :loop_amen, rate: 2, attack: 0.01, sustain: 0, release: 0.35
+# Welcome to Sonic Pi v2.6
