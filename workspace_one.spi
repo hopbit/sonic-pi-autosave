@@ -1,14 +1,7 @@
-live_loop :techno do
-  sample :bd_tek
-  sleep 0.5
-  sample :sn_zome, amp: 0.25
-  sleep 0.25
-  #sample :bd_tek
-  sleep 0.25
-  sample :bd_tek
-  sleep 0.25
-  sample :bd_tek
-  sleep 0.25
-  sample :sn_zome, amp: 0.25
-  sleep 0.5
-end
+# Others Snippets
+
+# found on twitter: 
+# https://github.com/samaaron/sonic-pi/issues/616
+puts note_info("C7", octave)
+puts note_info(96)
+puts note_info(:C7)
