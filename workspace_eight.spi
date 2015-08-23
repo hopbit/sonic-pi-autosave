@@ -1,1 +1,6 @@
-# Welcome to Sonic Pi v2.1
+# Snippets
+load_snippets("C:/Users/hoppbit/.sonic-pi/snippets")
+
+live_loop : do
+
+end
