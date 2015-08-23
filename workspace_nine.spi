@@ -1,5 +1,4 @@
 # Sonic Pi Tutorial 3.6
 live_loop :foo do
-  freesound 24787
-  sleep 3
+  sample "/Users/hoppbit/Desktop/my-sound.mp3"
 end
