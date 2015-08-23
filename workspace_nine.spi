@@ -2,5 +2,5 @@
 live_loop :foo do
   sample "C:/Users/hoppbit/Desktop/my-recording.wav"
   # C:\Users\hoppbit\Desktop
-  sleep 2
+  sleep 3
 end
