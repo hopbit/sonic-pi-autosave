@@ -1,5 +1,5 @@
 # Sonic Pi Tutorial 3.5
 live_loop :foo do
   sample :loop_amen, start: 0.1, finish: 0.15
-  sleep 1
+  sleep 0.2
 end
