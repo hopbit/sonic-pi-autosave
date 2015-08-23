@@ -1,6 +1,5 @@
 # Sonic Pi Tutorial 3.6
 live_loop :foo do
-  sample "C:/Users/hoppbit/Desktop/my-recording.wav", rate: 0.5, amp: 2
-  # C:\Users\hoppbit\Desktop
-  sleep 2
+  play rrand(50, 100)
+  sleep 1
 end
