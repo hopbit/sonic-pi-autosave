@@ -1,5 +1,5 @@
-# Sonic Pi Tutorial 3.5
+# Sonic Pi Tutorial 3.6
 live_loop :foo do
-  sample :loop_amen, start: 0.5, finish: 0.8, rate: -0.2, attack: 0.3, release: 1
+  freesound 24787
   sleep 3
 end
