@@ -1,5 +1,4 @@
-# Sonic Pi Tutorial 3.6
-live_loop :foo do
-  play rrand(50, 100)
-  sleep 1
-end
+# Sonic Pi Tutorial
+# 4 - Randomisation
+
+play rrand(50, 100)
