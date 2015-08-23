@@ -1,4 +1,4 @@
 # Sonic Pi Tutorial 3.5
-live_loop : do
+live_loop :foo do
   sample :loop_amen, start: 0.85
 end
