@@ -2,6 +2,6 @@
 
 # found on twitter: 
 # https://github.com/samaaron/sonic-pi/issues/616
-puts note_info("C7")
+puts note_info("C7", octave)
 puts note_info(96)
 puts note_info(:C7)
