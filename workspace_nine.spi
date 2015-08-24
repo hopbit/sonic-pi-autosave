@@ -1,9 +1,6 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
 loop do
-  play
-  do
-    
-  end
-
+  play rrand(50, 100)
+  sleep 0.5
 end
