@@ -1,1 +1,9 @@
-# Welcome to Sonic Pi v2.6
+# Sonic Pi Tutorial
+# 4 - Randomisation
+loop do
+  play
+  do
+    
+  end
+
+end
