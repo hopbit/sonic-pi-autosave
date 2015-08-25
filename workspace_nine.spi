@@ -1,7 +1,1 @@
-# Sonic Pi Tutorial
-# 4 - Randomisation
-use_synth :tb303
-live_loop :foo do
-  play 50, release: 0.08, cutoff: rrand(60,120)
-  sleep 0.125
-end
+# Welcome to Sonic Pi v2.6
