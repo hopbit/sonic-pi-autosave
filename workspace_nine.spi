@@ -1,7 +1,1 @@
-# Sonic Pi Tutorial
-# 4 - Randomisation
-use_random_seed 40
-5.times do
-  play rrand(50,100)
-  sleep 0.25
-end
+# Welcome to Sonic Pi v2.6
