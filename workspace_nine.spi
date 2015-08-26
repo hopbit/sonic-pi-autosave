@@ -1,6 +1,6 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
 loop do
-  play choose([60,65,72])
+  play choose([70,75,82])
 sleep 1
 end
