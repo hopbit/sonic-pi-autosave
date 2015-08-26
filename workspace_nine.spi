@@ -1,4 +1,4 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
 test =choose([60,65,72])
-puts "hello: " test 
+puts "hello: " , ttest 
