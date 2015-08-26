@@ -1,6 +1,6 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
-loop :myloop do
+loop do
   play choose([60,65,72])
 sleep 1
 end
