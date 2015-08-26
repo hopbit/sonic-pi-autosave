@@ -38,7 +38,7 @@ end
 define :bass_line do |root|
   cue :tick
   [root, root + 9, root + 10, root + 9].each do |note|
-    play note, release: trip_uh, amp: 4
+    play note, release: trip_uh, amp: 6
     sleep trip_uh
     play root + 7, amp: 0.5, release: let, amp: 8
     sleep let
