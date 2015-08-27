@@ -8,4 +8,10 @@ use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/d
 #sample "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/dubstep/db.wav"
 #sample :ptoyl
 
-play :c4
+# play :c4
+
+play :Gadd5 
+sleep 1
+play :Dsus4 :Am :Am
+                                        :Gadd5 :Dsus4 :Am :Am
+                                        :Gadd5 :Dsus4 :Cadd9 :Cadd9
