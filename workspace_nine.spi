@@ -1,6 +1,1 @@
-# Sonic Pi Tutorial
-# 4 - Randomisation
-loop do
-
-end
-play rrand(20,110)
+# Welcome to Sonic Pi v2.6
