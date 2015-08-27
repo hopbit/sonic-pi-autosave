@@ -3,10 +3,10 @@
 use_bpm 125
 use_synth :tb303
 live_loop :kick do
+  sample :sn_zome, amp: 1
+  sleep 0.25
   sample :bd_haus, amp: rand(1.5)
   sleep 0.5
   play choose([:c4,:d4,:e4,:f4,:g4,:a5,:b5,:c5]), amp: rand(1)
-  sleep 0.25
-  sample :sn_zome, amp: 1
   sleep 0.25
 end
