@@ -2,6 +2,6 @@
 # 4 - Randomisation
 use_bpm 129
 live_loop :kick do
-  sample :ambi_piano, amp: rand(3)
+  sample :elec_mid_snare, amp: rand(2)
   sleep 1
 end
