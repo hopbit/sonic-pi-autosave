@@ -2,4 +2,5 @@
 # 4 - Randomisation
 loop do
   play rrand(20,110)
+sleep 1
 end
