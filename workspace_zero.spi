@@ -10,20 +10,4 @@ use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/d
 
 # play :c4
 
-play scale_names( :Gadd5)
-sleep 1
-play :Dsus4 
-sleep 1
-play :Am 
-sleep 1
-play :Am
-sleep 1
-play :Gadd5 
-sleep 1
-play :Dsus4 
-play :Am 
-play :Am
-play :Gadd5 
-play :Dsus4 
-play :Cadd9 
-play :Cadd9
+play chord (:E3, :minor)
