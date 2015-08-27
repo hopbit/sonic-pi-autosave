@@ -1,6 +1,6 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
-use_bpm 129
+use_bpm 120
 live_loop :kick do
   sample :bd_haus , amp: rand(2)
   sleep 1
