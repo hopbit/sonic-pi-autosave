@@ -1,7 +1,8 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
 use_bpm 129
+use_synth :tri
 live_loop :kick do
-  play choose([:c5,:d5,:e5]), amp: rand(2)
+  play choose([:c5,:d5,:e5,:f5,:g5,:a6,:b6]), amp: rand(2)
   sleep 0.5
 end
