@@ -3,5 +3,5 @@
 use_bpm 129
 live_loop :kick do
   sample :ambi_piano, amp: rand(3)
-  sleep 0.5
+  sleep 1
 end
