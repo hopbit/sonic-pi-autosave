@@ -2,6 +2,6 @@
 # 4 - Randomisation
 use_bpm 129
 live_loop :kick do
-  play 70, amp: rand(2)
+  play choose([:c5,:d5,:e5]), amp: rand(2)
   sleep 0.5
 end
