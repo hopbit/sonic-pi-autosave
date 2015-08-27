@@ -1,11 +1,1 @@
-# Sonic Pi Tutorial
-# 4 - Randomisation
-use_bpm 125
-use_synth :tb303
-live_loop :kick do
-  sample :bd_haus, amp: rand(1.5)
-  sleep 0.5
-  sample :sn_zome, amp: 1
-  play choose([:c4,:d4,:e4,:f4,:g4,:a5,:b5,:c5]), amp: rand(1)
-  sleep 0.5
-end
+# Welcome to Sonic Pi v2.6
