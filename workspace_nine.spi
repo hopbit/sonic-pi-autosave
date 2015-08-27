@@ -1,5 +1,6 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
+use_bpm 129
 loop do
   sample :bd_tek , amp: rand(2)
   sleep 1
