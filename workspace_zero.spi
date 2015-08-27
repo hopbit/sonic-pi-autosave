@@ -10,4 +10,4 @@
 
 # play :c4
 
-play chord(:Gadd5, :major)
+play chord(:Gadd5, :Dsus4)
