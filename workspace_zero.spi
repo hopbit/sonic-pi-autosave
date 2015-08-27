@@ -6,4 +6,4 @@ use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/d
 #use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/lights"
 
 #sample "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/dubstep/db.wav"
-sample :technologic
+sample :technologic, amp: 0.25, rate: 1.01
