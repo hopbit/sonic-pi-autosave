@@ -10,4 +10,4 @@ use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/d
 
 # play :c4
 
-play chord (:E3, :minor)
+play chord(:E3, :minor)
