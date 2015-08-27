@@ -1,2 +1,4 @@
 # Live Coding Buffer
 use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources"
+
+sample :after
