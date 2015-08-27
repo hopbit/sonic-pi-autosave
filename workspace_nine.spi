@@ -1,6 +1,6 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
-use_bpm 129
+use_bpm 125
 use_synth :tb303
 live_loop :kick do
   sample :bd_haus, amp: rand(1.5)
