@@ -10,7 +10,7 @@ use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/d
 
 # play :c4
 
-play scale (:Gadd5, :major_pentatonic, num_octaves: 3)
+play scale (:Gadd5 :major_pentatonic, num_octaves: 3)
 sleep 1
 play :Dsus4 
 sleep 1
