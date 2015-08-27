@@ -1,6 +1,6 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
 loop do
-  play 70, amp: rand(2)
+  sample :bass_hard_c, amp: rand(2)
   sleep 1
 end
