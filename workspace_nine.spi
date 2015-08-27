@@ -2,5 +2,5 @@
 # 4 - Randomisation
 loop do
   play 70, amp: rand
-  sleep 0.25
+  sleep 1
 end
