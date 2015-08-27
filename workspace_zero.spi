@@ -4,8 +4,3 @@ use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/d
 use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/daft"
 use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/house"
 use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/lights"
-
-
-
-
-sample :db
