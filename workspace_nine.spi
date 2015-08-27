@@ -7,6 +7,6 @@ live_loop :kick do
   sleep 0.5
   play choose([:c4,:d4,:e4,:f4,:g4,:a5,:b5,:c5]), amp: rand(1)
   sleep 0.25
-  sample :elec_filt_snare, amp: 1
-sleep 0.25
+  sample :sn_zome, amp: 1
+  sleep 0.25
 end
