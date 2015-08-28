@@ -6,5 +6,5 @@
   sample :elec_blup
   sleep 0.5
   play 62
-  sleep 1
+  sleep 0.25
 end
