@@ -1,11 +1,7 @@
 # Sonic Pi Tutorial
 # 05.1 - Blocks
-use_bpm 129
-live_loop :foo do
-  play 50
-  sleep 0.5
-  sample :elec_beep
-  sleep 0.5
-  play 62
-  sleep 1
-end
+play 50
+sleep 0.5
+sample :elec_beep
+sleep 0.5
+play 62
