@@ -2,6 +2,8 @@
 # 05.2 - Iteration & Loops
 
 loop do
-  sample :loop_amen
-  sleep sample_duration :loop_amen
+  play 50
+  sleep 1
 end
+
+sample :drum_cymbal_open
