@@ -1,1 +1,6 @@
-# Welcome to Sonic Pi v2.6
+# Sonic Pi Tutorial
+# 4 - Randomisation
+live_loop :foo do
+  puts one_in(2)
+  sleep 1
+end
