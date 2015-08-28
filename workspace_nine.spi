@@ -1,14 +1,16 @@
 # Sonic Pi Tutorial
 # 05.2 - Iteration & Loops
-4.times do
-  sample :drum_heavy_kick
-  2.times do
-    sample :elec_blip2, rate: 2
-    sleep 0.25
-  end
-  sample :elec_snare
+live_loop :pattern do
   4.times do
-    sample :drum_tom_mid_soft
-    sleep 0.125
+    sample :drum_heavy_kick
+    2.times do
+      sample :elec_blip2, rate: 2
+      sleep 0.25
+    end
+    sample :elec_snare
+    4.times do
+      sample :drum_tom_mid_soft
+      sleep 0.125
+    end
   end
 end
