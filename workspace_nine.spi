@@ -1,6 +1,7 @@
 # Sonic Pi Tutorial
 # 05.2 - Iteration & Loops
 live_loop :pattern do
+  use_bpm 128
   4.times do
     sample :drum_heavy_kick
     2.times do
