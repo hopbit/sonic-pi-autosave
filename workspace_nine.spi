@@ -1,10 +1,11 @@
 # Sonic Pi Tutorial
 # 05.2 - Iteration & Loops
 
-comment
+comment do 
 loop do
   play 50
   sleep 1
+end
 end
 
 sample :drum_cymbal_open
