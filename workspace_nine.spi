@@ -1,6 +1,6 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
 live_loop :foo do
-  puts dice(2)
+  puts dice(6)
   sleep 1
 end
