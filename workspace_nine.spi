@@ -1,7 +1,9 @@
 # Sonic Pi Tutorial
 # 05.1 - Blocks
-play 50
-sleep 0.5
-sample :elec_beep
-sleep 0.5
-play 62
+do
+  play 50
+  sleep 0.5
+  sample :elec_beep
+  sleep 0.5
+  play 62
+end
