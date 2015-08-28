@@ -1,8 +1,8 @@
 # Sonic Pi Tutorial
 # 05.1 - Blocks
 
-play 70
+play 50
 sleep 0.5
 sample :elec_beep
 sleep 0.5
-play 82
+play 62
