@@ -1,5 +1,6 @@
 # Sonic Pi Tutorial
 # 4 - Randomisation
+live_loop :foo do
   sample :bd_haus, amp: rand(1.5)
   sleep 0.5
 end
