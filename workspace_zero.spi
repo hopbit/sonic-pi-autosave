@@ -13,8 +13,12 @@
 # play chord(:Gadd5, :Dsus4)
 
 use_synth :supersaw
-play chord(:C4, :major)
-sleep 1
-play chord(:C5, :major)
-sleep 1
-play chord(:C6, :major)
+live_loop :hello do
+
+  play chord(:C4, :major)
+  sleep
+  play chord(:C5, :major)
+  sleep 1
+
+  play chord(:C6, :major)
+end
