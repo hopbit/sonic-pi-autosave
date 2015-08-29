@@ -12,9 +12,10 @@
 
 # play chord(:Gadd5, :Dsus4)
 #comment do
-use_bpm 128
+
 use_synth :supersaw
 live_loop :hello do
+  use_bpm 100
   with_fx :echo do
     with_fx :flanger do
       play chord(:A, :major)
