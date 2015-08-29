@@ -3,7 +3,7 @@
 
 use_bpm 125
 
-comment do
+in_thread do
   loop do
     sample :drum_heavy_kick
     sleep 1
