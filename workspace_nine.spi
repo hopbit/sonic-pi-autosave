@@ -3,10 +3,11 @@
 
 use_bpm 125
 
-comment
-loop do
-  sample :drum_heavy_kick
-  sleep 1
+comment do
+  loop do
+    sample :drum_heavy_kick
+    sleep 1
+  end
 end
 
 loop do
