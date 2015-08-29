@@ -1,9 +1,11 @@
 # Sonic Pi Tutorial
-# 05.2 - Iteration & Loops
+# 05.3 - Conditionals
 
 loop do
-  play 50
-  sleep 1
+  if one_in(2)
+    sample :drum_heavy_kick
+  else
+    sample :drum_cymbal_closed
+  end
+  sleep 0.5
 end
-
-sample :drum_cymbal_open
