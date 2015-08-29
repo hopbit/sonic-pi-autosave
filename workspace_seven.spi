@@ -1,1 +1,2 @@
-# Welcome to Sonic Pi v2.1
+# empty buffer
+puts chord(:Es, '9')
