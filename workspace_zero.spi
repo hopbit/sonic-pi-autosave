@@ -12,13 +12,5 @@
 
 # play chord(:Gadd5, :Dsus4)
 
-live_loop : do
-  play chord(:C5, :major)
-  sleep 1
-  play chord(:D5, :major)
-  sleep 1
-  play chord(:E5, :major)
-  sleep 1
-  play chord(:F5, :major)
-  sleep 1
-end
+use_synth :supersaw
+play :C4
