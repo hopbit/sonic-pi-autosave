@@ -18,13 +18,13 @@ live_loop :hello do
   use_bpm 100
   with_fx :echo do
     with_fx :flanger do
-      play chord(:A, :major)
+      play chord(:A, :major), release: 1
       sleep 1
-      play chord(:E, :major)
+      play chord(:E, :major), release: 1
       sleep 1
-      play chord(:Fs, :m)
+      play chord(:Fs, :m), release: 1
       sleep 1
-      play chord(:D, :major)
+      play chord(:D, :major), release: 1
     end
   end
 end
