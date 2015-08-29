@@ -44,7 +44,7 @@ live_loop :hello do
     sleep 1
     play chord(:G, :major)
     sleep 1
-    play chord (:A, :minor7)
+    play chord(:A, :minor7)
     sleep 1
   end
   #end
