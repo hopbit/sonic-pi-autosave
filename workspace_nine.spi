@@ -1,1 +1,25 @@
-# Welcome to Sonic Pi v2.6
+# Sonic Pi Tutorial
+# 05.4 - Threads
+
+use_bpm 125
+
+in_thread do
+  loop do
+    sample :drum_heavy_kick
+    sleep 1
+  end
+end
+
+in_thread do
+  loop do.
+    use_synth :fm
+    play 56, release: 0.2
+    sleep 0.5
+  end
+end
+
+loop do
+  use_synth :zawa
+  play 68, release: 2.5, phase: 2, amp: 0.125
+  sleep 2
+end
