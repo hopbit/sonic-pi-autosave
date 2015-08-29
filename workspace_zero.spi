@@ -29,3 +29,5 @@ comment do
     end
   end
 end
+
+play chord(:E, :major7)
