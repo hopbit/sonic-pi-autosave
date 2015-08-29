@@ -9,5 +9,5 @@ in_thread do
   play 50 + 24
 end
 
-sleep 
+#sleep 1
 play 50 + 24
