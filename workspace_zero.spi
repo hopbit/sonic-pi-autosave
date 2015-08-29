@@ -17,8 +17,9 @@ use_synth :supersaw
 live_loop :hello do
 
   play chord(:C4, :major)
-  sleep 1
-  play chord(:C5, :major)
+  sleep 0.5
+ play chord(:C4, :major)
+
   sleep 1
 
   play chord(:C6, :major)
