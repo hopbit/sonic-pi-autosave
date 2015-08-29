@@ -15,7 +15,7 @@ live_loop :hello do
   use_synth :supersaw
   use_synth_defaults release: 2
   use_bpm 98
-  with_fx :nrbpf do
+  with_fx :nrhpf do
     with_fx :echo do
         play chord(:F, :major)
         sleep 2
