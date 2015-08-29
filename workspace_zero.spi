@@ -15,7 +15,7 @@
 live_loop :hello do
   use_synth :supersaw
   use_synth_defaults release: 1
-  use_bpm 50
+  use_bpm 85
   with_fx :reverb do
   with_fx :echo do
     # one
