@@ -20,6 +20,6 @@ end
 
 loop do
   use_synth :zawa
-  play 68, release: 2.5, phase: 2, amp: 0.5
+  play 68, release: 2.5, phase: 2, amp: 0.25
   sleep 2
 end
