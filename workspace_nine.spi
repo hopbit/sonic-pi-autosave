@@ -5,5 +5,6 @@ in_thread(name: :bass) do
   loop do
     use_synth :prophet
     play chord(:e2, :m7).choose, release: 0.6
+sleep 0.5
   end
 end
