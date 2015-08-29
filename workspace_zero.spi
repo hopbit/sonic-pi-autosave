@@ -11,23 +11,15 @@
 # play :c4
 
 # play chord(:Gadd5, :Dsus4)
-comment do
-  use_bpm 128
-  use_synth :supersaw
-  live_loop :hello do
-    with_fx :echo do
-      with_fx :flanger do
-        2.times do
-          play chord(:C4, :major), release: 4
-          sleep 4
-        end
-        2.times do
-          play chord(:A4, :m7), release: 4
-          sleep 4
-        end
-      end
+#comment do
+use_bpm 128
+use_synth :supersaw
+live_loop :hello do
+  with_fx :echo do
+    with_fx :flanger do
+      play chord(:E, :major7)
+      sleep 1
     end
   end
 end
-
-play chord(:E, :major7)
+#end
