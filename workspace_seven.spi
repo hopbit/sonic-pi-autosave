@@ -1,2 +1,2 @@
 # empty buffer
-puts chord(:Es, '9')
+play chord(:Es, '9')
