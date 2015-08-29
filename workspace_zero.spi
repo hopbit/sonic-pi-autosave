@@ -19,7 +19,7 @@ live_loop :hello do
   play chord(:C4, :major), release: 2
   sleep 0.5
   play chord(:C4, :major)
-  sleep 1
+  sleep 0.5
 
   play chord(:E4, :major)
   sleep 1
