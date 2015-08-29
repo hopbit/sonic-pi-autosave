@@ -11,7 +11,7 @@ in_thread do
 end
 
 in_thread do
-  loop dos
+  loop do
     use_synth :fm
     play 56, release: 0.2
     sleep 0.5
