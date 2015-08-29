@@ -22,8 +22,6 @@ live_loop :hello do
       sleep 2
       play chord(:D, :major)
       sleep 2
-      play chord(:D, :major)
-      sleep 2
       play chord(:C, :major), release: 4
       sleep 4
       play chord(:D, :major)
