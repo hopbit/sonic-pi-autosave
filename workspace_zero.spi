@@ -17,9 +17,13 @@ use_synth :supersaw
 live_loop :hello do
   with_fx :echo do
     with_fx :flanger do
-      play chord(:E, '7+5')
+      play chord(:A, :major)
       sleep 1
-play chord(:E, :)
+      play chord(:E, :major)
+      sleep 1
+      play chord(:Fs, :m)
+      sleep 1
+      play chord(:D, :major)
     end
   end
 end
