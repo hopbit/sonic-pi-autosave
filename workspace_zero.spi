@@ -17,7 +17,6 @@ live_loop :hello do
   use_bpm 98
   with_fx :ixi_techno do
     with_fx :echo do
-      2.times do
         play chord(:F, :major)
         sleep 2
         play chord(:G, :major)
@@ -26,11 +25,6 @@ live_loop :hello do
         sleep 2
         play chord(:a, :minor7)
         sleep 2
-      end
-      play chord(:F, :major)
-      sleep 2
-      play chord(:G, :major)
-      sleep 2
     end
   end
 end
