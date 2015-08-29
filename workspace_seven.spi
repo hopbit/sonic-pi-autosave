@@ -1,4 +1,7 @@
 # empty buffer
   synth :beep
+play 60
 sleep 1
 synth :blade
+play 60 
+sleep 1
