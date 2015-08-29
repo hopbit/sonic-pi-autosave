@@ -13,4 +13,4 @@
 # play chord(:Gadd5, :Dsus4)
 
 use_synth :supersaw
-play :C4
+play chord(:C4, :major)
