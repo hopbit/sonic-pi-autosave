@@ -1,2 +1,4 @@
 # empty buffer
-play chord(:Es, '9')
+play chord(:Es, :maj9)
+sleep 1
+play chord(:F, :maj9)
