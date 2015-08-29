@@ -16,12 +16,15 @@ use_bpm 128
 use_synth :supersaw
 
 live_loop :hello do
+
   with_fx :echo do
-    play chord(:C4, :major), release: 1
-    sleep 1
-    play chord(:C4, :major), release: 2
-    sleep 2
-    play chord(:C4, :major), release: 3
-    sleep 3
+    with_fx :flanger do
+      play chord(:C4, :major), release: 1
+      sleep 1
+      play chord(:C4, :major), release: 2
+      sleep 2
+      play chord(:C4, :major), release: 3
+      sleep 3
+    end
   end
 end
