@@ -1,4 +1,4 @@
 # Sonic Pi Tutorial
 # 05.4 - Threads
 
-play 50 + 32
+play 50 + 24
