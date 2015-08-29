@@ -15,7 +15,7 @@
 
 use_synth :supersaw
 live_loop :hello do
-  use_bpm 90
+  use_bpm 84
   with_fx :echo do
     with_fx :flanger do
       play chord(:E, :minor), release: 1
