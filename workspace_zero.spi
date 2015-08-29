@@ -16,7 +16,7 @@ live_loop :hello do
   use_synth :supersaw
   use_synth_defaults release: 2
   use_bpm 98
-  with_fx :bitcrusher do
+  #with_fx  do
     with_fx :echo do
       2.times do
         play chord(:F, :major)
@@ -33,6 +33,6 @@ live_loop :hello do
       play chord(:G, :major)
       sleep 2
     end
-  end
+  #end
 end
 #end
