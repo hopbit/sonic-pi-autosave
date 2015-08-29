@@ -1,14 +1,9 @@
 # Sonic Pi Tutorial
 # 05.4 - Threads
 
-
-use_synth :tb303
-play 50 + 24
-sleep 1
-
-in_thread do
-  play 50 + 24
+in_thread(name: :bass) do
+  loop do
+    use_synth :prophet
+    play chord(:e2, :m7).choose, release: 0.6
+  end
 end
-
-sleep 1
-play 50+24
