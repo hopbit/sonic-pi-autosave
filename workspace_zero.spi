@@ -13,7 +13,7 @@
 # play chord(:Gadd5, :Dsus4)
 live_loop :hello do
   use_synth :supersaw
-  use_synth_defaults release: 2, amp: 2
+  use_synth_defaults release: 2, amp: 1
   use_bpm 98
   with_fx :slicer do
     with_fx :echo do
