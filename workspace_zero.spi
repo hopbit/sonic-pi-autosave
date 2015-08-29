@@ -16,37 +16,37 @@ live_loop :hello do
   use_synth :supersaw
   use_synth_defaults release: 1
   use_bpm 50
-  #with_fx :echo do
   with_fx :flanger do
-    # one
-    play chord(:G, :major)
-    sleep 1
-    play chord(:D, :major)
-    sleep 1
-    play chord(:C, :major), release: 2
-    sleep 2
-    play chord(:D, :major)
-    sleep 1
-    play chord(:C, :major)
-    sleep 1
-    play chord(:G, :major), release: 2
-    sleep 2
-    # two
-    play chord(:G, :major)
-    sleep 1
-    play chord(:D, :major)
-    sleep 1
-    play chord(:C, :major), release: 2
-    sleep 2
-    play chord(:D, :major)
-    sleep 1
-    play chord(:C, :major)
-    sleep 1
-    play chord(:G, :major)
-    sleep 1
-    play chord(:A, :minor7)
-    sleep 1
+    with_fx :echo do
+      # one
+      play chord(:G, :major)
+      sleep 1
+      play chord(:D, :major)
+      sleep 1
+      play chord(:C, :major), release: 2
+      sleep 2
+      play chord(:D, :major)
+      sleep 1
+      play chord(:C, :major)
+      sleep 1
+      play chord(:G, :major), release: 2
+      sleep 2
+      # two
+      play chord(:G, :major)
+      sleep 1
+      play chord(:D, :major)
+      sleep 1
+      play chord(:C, :major), release: 2
+      sleep 2
+      play chord(:D, :major)
+      sleep 1
+      play chord(:C, :major)
+      sleep 1
+      play chord(:G, :major)
+      sleep 1
+      play chord(:A, :minor7)
+      sleep 1
+    end
   end
-  #end
 end
 #end
