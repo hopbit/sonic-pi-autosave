@@ -14,8 +14,9 @@
 
 use_bpm 128
 use_synth :supersaw
+
 live_loop :hello do
-  with_fx :hpf do
+  with_fx :bitcrusher do
     play chord(:C4, :major), release: 1
     sleep 1
     play chord(:C4, :major), release: 2
