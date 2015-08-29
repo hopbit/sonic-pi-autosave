@@ -15,3 +15,8 @@ loop do
   play 56, release: 0.2
   sleep 0.5
 end
+
+loop do
+  use_synth :zawa
+  play 68, release: 2.5, phase: 2, amp: 0.5
+end
