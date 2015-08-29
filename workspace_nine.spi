@@ -1,6 +1,8 @@
 # Sonic Pi Tutorial
 # 05.4 - Threads
 
+use_bpm 125
+
 loop do
   sample :drum_heavy_kick
   sleep 1
