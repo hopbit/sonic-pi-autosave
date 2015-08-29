@@ -16,13 +16,13 @@ use_bpm 128
 use_synth :supersaw
 live_loop :hello do
 
-  play chord(:C4, :major), release: 2
+  play chord(:C4, :major), release: 3
   sleep 0.5
-  play chord(:C4, :major)
+  play chord(:C4, :major), release: 3
   sleep 3.5
 
-  play chord(:E4, :major)
+  play chord(:E4, :major), release: 3
   sleep 0.5
-  play chord(:E4, :major)
+  play chord(:E4, :major), release: 3
   sleep 3.5
 end
