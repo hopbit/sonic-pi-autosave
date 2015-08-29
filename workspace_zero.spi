@@ -14,17 +14,20 @@
 #comment do
 
 use_synth :supersaw
+use_synth_defaults release: 2
 live_loop :hello do
   use_bpm 84
   with_fx :echo do
     with_fx :flanger do
-      play chord(:E, :minor), release: 2
+      play chord(:E, :minor)#, release: 2
       sleep 2
-      play chord(:A, :major), release: 2
+      play chord(:A, :major)#, release: 2
       sleep 2
-      play chord(:D, :major), release: 2
+      play chord(:D, :major)#, release: 2
       sleep 2
-      play chord(:G, :major), release: 2
+      play chord(:G, :major)#, release: 2
+      sleep 2
+      play chord(:C, :major)#, release: 2
     end
   end
 end
