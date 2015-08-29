@@ -14,3 +14,5 @@
 
 use_synth :supersaw
 play chord(:C4, :major)
+play chord(:C5, :major)
+play chord(:C6, :major)
