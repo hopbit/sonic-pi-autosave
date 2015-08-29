@@ -8,3 +8,6 @@ in_thread do
   use_synth :tb303
   play 50 + 24
 end
+
+sleep 1
+play 50 + 24
