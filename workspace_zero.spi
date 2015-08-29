@@ -13,9 +13,10 @@
 # play chord(:Gadd5, :Dsus4)
 #comment do
 
-use_synth :supersaw
-use_synth_defaults release: 2
+
 live_loop :hello do
+  use_synth :supersaw
+  use_synth_defaults release: 0.5
   use_bpm 84
   with_fx :echo do
     with_fx :flanger do
