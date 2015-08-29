@@ -1,6 +1,6 @@
 # empty buffer
 use_synth :beep
-play 60
+play 70
 sleep 1
 use_synth :blade
 play 60 
