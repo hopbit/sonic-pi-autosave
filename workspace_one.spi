@@ -1,54 +1,134 @@
 # Others Snippets
 
-# bass line from Miles Davis' "So What"
-# https://gist.github.com/alyssa/9a1311aea122b1d9d713
+# Get Lucky by Daft Punk
+# http://www.sonicpiliveandcoding.com/s/Sonic_Pi_code_for_Get_Lucky_by_Daft_Punk.txt
 
-# beats per minute
-use_bpm 140
+use_synth :tb303
+use_synth_defaults release: 0.25, attack: 0.5, cutoff: 100
 
-# Choose a root note (one) and everything else will fall into place.
-one = :D2
-
-# Groove: quarter note triplets (trip-uh-let, trip-uh-let, ...)
-trip_uh = 0.6666
-let = 0.3333
-
-in_thread(name: :bass) do
-  2.times { bass_line one }
-  1.times { bass_line one + 1 }
-  1.times { bass_line one }
+1.times do
+  #use_synth :tb303
+  #use_synth_defaults release: 0.25, attack: 0.5, cutoff: 100
+  play chord(:A3, :minor)
+  sleep 2
+  play chord(:C4, :major)
+  sleep 2
+  play chord(:E3, :minor)
+  sleep 2
+  play chord(:D4, :major)
+  sleep 2
 end
 
-define :bass_line do |root|
-  4.times do |i|
-    if i != 3
-      sleep trip_uh
-      play_note root, let
-      [[root + 6, root + 8], [root + 10,root+12], [root+14, root+10]].each do |note_1, note_2|
-        cue :tick
-        play_note note_1, trip_uh
-        play_note note_2, let
-      end
-
-      if i == 0 || i == 2
-        play_note root+12, 4
-      elsif i == 1
-        play_note root + 12, trip_uh
-        play_note root + 7, let + 3
-      end
-    else 
-      sleep trip_uh
-      play_note root + 14, let + 1
-      play_note root + 14, 1
-      play_note root + 14, 1
-      play_note root + 12, 1 + trip_uh
-      play_note root + 7, 1
-      sleep 1
-    end
+in_thread do
+  #use_synth :tb303
+  #use_synth_defaults release: 0.25, attack: 0.5, cutoff: 100
+  loop do
+    play chord(:A3, :minor)
+    play :A2
+    sleep 2
+    play chord(:C4, :major)
+    play :C3
+    sleep 2
+    play chord(:E3, :minor)
+    play :E3
+    sleep 2
+    play chord(:D4, :major)
+    play :D3
+    sleep 2
+    play chord(:A3, :minor)
+    play :A2
+    sleep 2
+    play chord(:C4, :major)
+    play :C3
+    sleep 2
+    play chord(:E3, :minor)
+    play :E3
+    sleep 2
+    play chord(:D4, :major)
+    play :Gb3
+    sleep 2
   end
 end
 
-define :play_note do |note, length|
-  play note, release: length
-  sleep length
+in_thread do
+  use_synth :tb303
+  use_synth_defaults attack: 0.1, release: 0.1, cutoff: lambda{rrand(80, 120)}
+  loop do
+    2.times do
+      sleep 0.25
+      play :C5
+      sleep 0.25
+      play :C5
+      sleep 0.25
+      play :C5
+      sleep 0.125
+      play :C5
+      sleep 0.25
+      play :C5
+      sleep 0.125
+      play :C5
+      sleep 0.25
+      play :D5
+      sleep 0.5
+    end
+    sleep 0.25
+    play :B4
+    sleep 0.25
+    play :B4
+    sleep 0.25
+    play :B4
+    sleep 0.125
+    play :B4
+    sleep 0.25
+    play :B4
+    sleep 0.125
+    play :B4
+    sleep 0.25
+    play :D5
+    sleep 0.5
+    sleep 0.25
+    play :A4
+    sleep 0.25
+    play :A4
+    sleep 0.25
+    play :A4
+    sleep 0.125
+    play :A4
+    sleep 0.25
+    play :A4
+    sleep 0.125
+    play :B4
+    sleep 0.25
+    play :A4
+    sleep 0.25
+    play :G4
+    sleep 0.25
+  end
+end
+
+in_thread do
+  loop do
+    3.times do
+      sample :drum_heavy_kick
+      sleep 0.5
+      sample :drum_snare_hard
+      sleep 0.5
+      sample :drum_heavy_kick
+      sleep 0.5
+      sample :drum_snare_hard
+      sleep 0.5
+    end
+    sample :drum_heavy_kick
+    sleep 0.5
+    sample :drum_snare_hard
+    sleep 0.5
+    sample :drum_heavy_kick
+    sleep 0.25
+    sample :drum_snare_hard
+    sleep 0.25
+    sample :drum_heavy_kick
+    sleep 0.25
+    sample :drum_snare_hard
+    sleep 0.25
+  end
 end
