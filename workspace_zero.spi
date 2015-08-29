@@ -20,9 +20,9 @@ live_loop :hello do
     with_fx :flanger do
       play chord(:C4, :major), release: 2
       sleep 1
-      play chord(:C4, :major), release: 2
+      play chord(:D4, :major), release: 2
       sleep 1
-      play chord(:C4, :major), release: 4
+      play chord(:E4, :major), release: 4
       sleep 6
     end
   end
