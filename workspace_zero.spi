@@ -12,8 +12,6 @@
 
 # play chord(:Gadd5, :Dsus4)
 #comment do
-
-
 live_loop :hello do
   use_synth :supersaw
   use_synth_defaults release: 2
@@ -29,6 +27,11 @@ live_loop :hello do
       play chord(:G, :major)
       sleep 2
       play chord(:C, :major)
+      sleep 2
+      play chord(:A, :minor7)
+      sleep 2
+      play chord(:H, :major7), release: 4
+      sleep 4
     end
   end
 end
