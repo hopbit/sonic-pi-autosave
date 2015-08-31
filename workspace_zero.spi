@@ -11,6 +11,6 @@
 use_bpm 128
 live_loop :foo do
   use_synth :growl
-  play chord(:Gs4, :major), amp: 2
+  play chord(:Gs4, :major), amp: 1
   sleep 2
 end
