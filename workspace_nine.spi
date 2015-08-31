@@ -8,9 +8,11 @@ define :chord_player do |root, repeats|
   end
 end
 
-chord_player :e4, 2
-sleep 0.5
-chord_player :a4, 3
-chord_player :g4, 4
-sleep 0.5
-chord_player :e4, 3
+live_loop : do
+  chord_player :e4, 2
+  sleep 0.5
+  chord_player :a4, 3
+  chord_player :g4, 4
+  sleep 0.5
+  chord_player :e4, 3
+end
