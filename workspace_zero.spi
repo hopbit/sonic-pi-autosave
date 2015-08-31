@@ -11,6 +11,6 @@
 use_bpm 128
 live_loop :foo do
   use_synth :hollow
-  play chord(:Gs4, :major), amp: 3
+  play chord(:Gs4, :major), amp: 4
   sleep 2
 end
