@@ -1,7 +1,8 @@
 # Sonic Pi Tutorial
 # 05.6 - Zmienne
 
-sample_name = :loop_amen
+sample_name = :loop_garzul
+# sd = sample_duration(:loop_amen)
 sample sample_name
 sleep sample_duration(sample_name)
 sample sample_name, rate: 0.5
