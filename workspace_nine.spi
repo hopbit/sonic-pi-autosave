@@ -8,7 +8,7 @@ define :chord_player do |root, repeats|
   end
 end
 
-live_loop : do
+live_loop :foo do
   chord_player :e4, 2
   sleep 0.5
   chord_player :a4, 3
