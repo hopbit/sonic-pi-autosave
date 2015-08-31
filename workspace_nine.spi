@@ -2,5 +2,5 @@
 # 05.6 - Zmienne
 
 s = play 50 + 24, release: 8
-
+sleep 10
 s
