@@ -8,6 +8,7 @@
 #sample "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/dubstep/db.wav"
 #sample :ptoyl
 
-
-use_synth :beep
-play chord(:Gs5, :major)
+live_loop : do
+  use_synth :beep
+  play chord(:Gs5, :major)
+end
