@@ -2,9 +2,9 @@
 # 05.5 - Functions
 
 define :foo do
-  play 50
+  play 50 + 24
   sleep 1
-  play 55
+  play 55 + 24
   sleep 0.5
 end
 
