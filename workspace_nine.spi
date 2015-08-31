@@ -3,7 +3,7 @@
 
 define :chord_player do |root, repeats|
   repeats.times do
-    play chord(root, :minor), release 0.3
+    play chord(root, :minor), release: 0.3
     sleep 0.5
   end
 end
