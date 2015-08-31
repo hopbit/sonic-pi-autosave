@@ -11,6 +11,6 @@
 use_bpm 128
 live_loop :foo do
   use_synth :dark_ambience
-  play chord(:Gs8, :major)
+  play chord(:Gs4, :major)
   sleep 2
 end
