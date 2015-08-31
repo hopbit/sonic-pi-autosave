@@ -2,7 +2,12 @@
 # 05.6 - Zmienne
 
 s = play 50 + 18, release: 8
-sleep 2
-control s, note: 62 + 18
-sleep 2
-control s, note: 74 + 18
+sleep 1
+control s, note: 52 + 18
+sleep 1
+control s, note: 54 + 18
+sleep 1
+control s, note: 56 + 18
+sleep 1
+control s, note: 58 + 18
+sleep 1
