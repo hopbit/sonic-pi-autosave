@@ -1,18 +1,14 @@
 # Others Snippets
 
-# https://gist.github.com/samaaron/60bdd8795100383c613e
 
-live_loop :foo do
-  use_random_seed 10
-  64.times do
-    play :e5, release: 0.1 if  rand < 0.2
-    sleep 0.125
+live_loop :triplets do
+  density 3 do
+    play :e4, release: 0.1
+    sleep 1
   end
 end
 
-live_loop :bar do
-  with_fx :slicer, probability: 0.2, seed: 10, phase: 0.125 do
-    synth :prophet, release: 8, note: :e2, cutoff: 70
-    sleep 8
-  end
+live_loop :beat do
+  sample :bd_haus, cutoff: 90
+  sleep 0.5
 end
