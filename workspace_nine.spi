@@ -1,6 +1,8 @@
 # Sonic Pi Tutorial
 # 05.6 - Zmienne
 
-s = play 50 + 24, release: 8
+s = play 50 + 18, release: 8
 sleep 2
-control s, note: 62 + 24
+control s, note: 62 + 18
+sleep 2
+control s, note: 74 + 18
