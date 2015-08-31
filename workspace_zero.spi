@@ -12,5 +12,5 @@ use_bpm 128
 live_loop :foo do
   use_synth :beep
   play chord(:Gs5, :major)
-  sleep 4
+  sleep 1
 end
