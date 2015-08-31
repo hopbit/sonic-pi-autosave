@@ -1,9 +1,10 @@
 # Sonic Pi Tutorial
 # 05.6 - Zmienne
 
-sample :loop_amen
-sleep sample_duration(:loop_amen)
-sample :loop_amen, rate: 0.5
-sleep sample_duration(:loop_amen, rate: 0.5)
-sample :loop_amen
-sleep sample_duration(:loop_amen)
+sample_name = :loop_amen
+sample sample_name
+sleep sample_duration(sample_name)
+sample sample_name, rate: 0.5
+sleep sample_duration(sample_name, rate: 0.5)
+sample sample_name
+sleep sample_duration(sample_name)
