@@ -1,4 +1,4 @@
 # Sonic Pi Tutorial
 # 05.6 - Zmienne
 
-s = play 50, release: 8
+s = play 50 + 24, release: 8
