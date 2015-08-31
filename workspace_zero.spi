@@ -1,10 +1,11 @@
-live_loop :wow do
-  sample :ambi_choir
-  sleep 1
-  sample :ambi_dark_woosh
-  sleep 3
-  sample :ambi_drone
-  sleep 5
-  sample :ambi_glass_hum
-  sleep 5
-end
+# Live Coding Buffer
+#use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources"
+#use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/dubstep"
+#use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/daft"
+#use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/house"
+#use_sample_pack "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/lights"
+
+#sample "D:/hopbit/dev/workspace/workshops/overtone-workshop/resources/dubstep/db.wav"
+#sample :ptoyl
+
+play chord(:Gs5, :major)
