@@ -3,4 +3,4 @@
 
 s = play 74, release: 8
 sleep 2
-control s, note: 62
+control s, note: 62, release: 6
