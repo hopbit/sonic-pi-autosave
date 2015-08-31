@@ -1,27 +1,64 @@
 # Others Snippets
 
-
-use_bpm 100
-
-live_loop :amen_break do
-  p = [0.125, 0.25, 0.5].choose
-  with_fx :slicer, phase: p, wave: 0, mix: rrand(0.7, 1) do
-    r = [1, 1, 1, -1].choose
-    sample :loop_amen, beat_stretch: 2, rate: r , amp: 2
+live_loop :drums do
+  with_fx :level, amp:1.0 do
+    sample :bd_ada, attack:0, sustain_level:0, decay: 0.1, start: 0, amp:2, rate:0.5
+    sleep 0.125
+    with_fx :reverb, mix:0.2, room:0.5 do
+      sample :perc_snap, attack:0, sustain_level:0, decay: (ring 0.1, 0.1, 0.1, 0.5).tick(:t1), start: 0, amp:1, rate:(ring -2, -3, -4, -5).tick(:t1b)
+      sleep 0.125
+      with_fx :krush, mix:0.7 do
+        sample :misc_burp, attack:0, sustain_level:0, decay: 0.4, start: 0.5, amp:(ring 0.4, 0.6, 0.8, 0).tick(:t2), rate:0.9
+      end
+    end
+    sleep 0.125
+    sample :bd_ada, attack:0, sustain_level:0, decay: 0.1, start: 0, amp:(ring 0, 0, 0, 1).tick(:bbb)
+    sleep 0.125
+    with_fx :reverb, mix:(ring 0, 0, 0, 0.4).tick(:rt3), room:0.7 do
+      sample :sn_dub, attack:0, sustain_level:0, decay: (ring 0.05, 0.05, 0.05, 0.5).tick(:t3), start: 0, amp:1
+    end
+    sleep 0.375
+    sample :sn_dub, attack:0, sustain_level:0, decay: 0.05, start: 0, amp:(ring 0, 0, 0.5, 0).tick(:sss)
+    sleep 0.125
   end
-  sleep 2
 end
 
-live_loop :bass_drum do
-  sample :bd_haus, cutoff: 70, amp: 1.5
-  sleep 0.5
+live_loop :bass do
+  with_fx :level, amp:1.5 do
+    sync :drums
+    use_synth :sine
+    play (scale :E1, :minor_pentatonic).tick(:mp), attack:0.08, decay: 1, sustain_level:0, amp:1
+    tick(:mp)
+    tick(:mp)
+    sleep 2
+  end
 end
 
-live_loop :landing do
-  bass_line = (knit :e1, 3, [:c1, :c2].choose, 1)
-  with_fx :slicer, phase: [0.25, 0.5].choose, invert_wave: 1, wave: 0 do
-    s = synth :square, note: bass_line.tick, sustain: 4, cutoff: 60
-    control s, cutoff_slide: 4, cutoff: 120
+samples1 = (ring :guit_e_fifths, :guit_harmonics, :guit_e_slide, :guit_em9)
+live_loop :plucks do
+  sync :drums
+  with_fx :level, amp:1.5 do
+    with_fx :reverb, mix:0.5, room:0.3 do
+      sleep 0.75
+      4.times do
+        sample samples1.tick(:ts22), attack:0, sustain_level:0, decay: 0.25, start: (ring 0, 0, 0, 0, 0.2, 0, 0.1, 0.2).tick(:t4), amp:2, rate: (ring 0.5, 1, 0.125, 0.25).tick(:t22)
+        sleep 0.25
+      end
+      sleep 0.25
+    end
   end
-  sleep 4
+end
+
+live_loop :pad do
+  sync :drums
+  with_fx :level, amp:0.2 do
+    with_fx :reverb, mix:0.7, room:0.7 do
+      with_fx :echo, mix:0.5, phase: 0.375, decay:6 do
+        with_fx :nhpf, centre:24, amp:0.25 do
+          sample :guit_e_fifths, attack:2, sustain_level:0, decay:2, start: 0, amp:1, rate: (ring 0.75, 0.5).tick
+          sleep 8
+        end
+      end
+    end
+  end
 end
