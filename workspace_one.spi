@@ -1,14 +1,18 @@
-live_loop :techno do
-  sample :bd_tek
-  sleep 0.5
-  sample :sn_zome, amp: 0.25
-  sleep 0.25
-  #sample :bd_tek
-  sleep 0.25
-  sample :bd_tek
-  sleep 0.25
-  sample :bd_tek
-  sleep 0.25
-  sample :sn_zome, amp: 0.25
-  sleep 0.5
+# Others Snippets
+
+# https://gist.github.com/samaaron/60bdd8795100383c613e
+
+live_loop :foo do
+  use_random_seed 10
+  64.times do
+    play :e5, release: 0.1 if  rand < 0.2
+    sleep 0.125
+  end
+end
+
+live_loop :bar do
+  with_fx :slicer, probability: 0.2, seed: 10, phase: 0.125 do
+    synth :prophet, release: 8, note: :e2, cutoff: 70
+    sleep 8
+  end
 end
