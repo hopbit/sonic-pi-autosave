@@ -1,6 +1,9 @@
 # Sonic Pi Tutorial
 # 05.5 - Functions
 
-my_player 80
-sleep 0.5
-my_player 90
+define chord_player do |root, repeats|
+  repeats.times do
+    play chord(root, :minor), release 0.3
+    sleep 0.5
+  end
+end
