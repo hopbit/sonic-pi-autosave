@@ -10,7 +10,7 @@
 
 use_bpm 128
 live_loop :foo do
-  use_synth :hooverr
-  play chord(:Gs4, :major), amp: 10
+  use_synth :mod_beep
+  play chord(:Gs4, :major), amp: 1
   sleep 2
 end
