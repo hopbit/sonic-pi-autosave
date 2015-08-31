@@ -1,9 +1,1 @@
-# Sonic Pi Tutorial
-# 05.6 - Zmienne
-
-sample_name = :loop_amen
-
-sample sample_name
-
-
-pa
+# Welcome to Sonic Pi v2.6
