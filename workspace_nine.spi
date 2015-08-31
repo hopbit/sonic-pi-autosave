@@ -1,10 +1,6 @@
 # Sonic Pi Tutorial
 # 05.5 - Functions
 
-define :my_player do |n|
-  play n
-end
-
 my_player 80
 sleep 0.5
 my_player 90
