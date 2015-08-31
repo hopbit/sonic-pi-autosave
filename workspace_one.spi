@@ -1,5 +1,6 @@
 # Others Snippets
 
+# https://gist.github.com/jeremywen/266e1d74b6156bff0e19
 live_loop :drums do
   with_fx :level, amp:1.0 do
     sample :bd_ada, attack:0, sustain_level:0, decay: 0.1, start: 0, amp:2, rate:0.5
