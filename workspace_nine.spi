@@ -1,17 +1,3 @@
 # Sonic Pi Tutorial
 # 05.5 - Functions
-
-define :foo do
-  play 50 + 24
-  sleep 1
-  play 55 + 24
-  sleep 0.5
-end
-
 foo
-
-sleep 1
-
-2.times do
-  foo
-end
