@@ -10,7 +10,7 @@
 
 use_bpm 128
 live_loop :foo do
-  use_synth :dsaw
+  use_synth :dull_bell
   play chord(:Gs4, :major)
   sleep 2
 end
