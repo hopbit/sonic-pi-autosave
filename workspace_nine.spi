@@ -1,18 +1,6 @@
 # Sonic Pi Tutorial
-# 05.5 - Functions
+# 05.6 - Zmienne
 
-define :chord_player do |root, repeats|
-  repeats.times do
-    play chord(root, :minor), release: 0.3
-    sleep 0.5
-  end
-end
+sample_name = :loop_amen
 
-live_loop :foo do
-  chord_player :e4, 2
-  sleep 0.5
-  chord_player :a4, 3
-  chord_player :g4, 4
-  sleep 0.5
-  chord_player :e4, 3
-end
+sample sample_name
