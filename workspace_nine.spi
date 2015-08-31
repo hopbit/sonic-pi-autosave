@@ -2,3 +2,5 @@
 # 05.6 - Zmienne
 
 s = play 74, release: 8
+sleep 2
+control s, note: 62
