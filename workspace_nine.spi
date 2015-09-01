@@ -4,7 +4,7 @@
 in_thread do
   loop do
     cue :tick
-    sleep 1
+    sleep 2
   end
 end
 
