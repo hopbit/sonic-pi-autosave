@@ -1,13 +1,16 @@
 # Sonic Pi Tutorial
-# 05.6 - Zmienne
+# 05.7 - Threads Synchronisation
 
-s = play 50 + 18, release: 8
-sleep 1
-control s, note: 52 + 18
-sleep 1
-control s, note: 54 + 18
-sleep 1
-control s, note: 56 + 18
-sleep 1
-control s, note: 58 + 18
-sleep 1
+in_thread do
+  loop do
+    cue :tick
+    sleep 1
+  end
+end
+
+in_thread do
+  loop do
+    sync :tick
+    sample :drum_heavy_kick
+  end
+end
