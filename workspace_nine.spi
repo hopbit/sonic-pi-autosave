@@ -8,7 +8,7 @@ in_thread do
   end
 end
 
-sleep 2
+sleep 2.5
 
 in_thread do
   loop do
