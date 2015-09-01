@@ -13,6 +13,6 @@ sleep(0.3)
 in_thread do
   loop do
     sync :tick
-    sample :drum_heavy_kick
+    sample :drum_heavy_kick, amp: 2
   end
 end
