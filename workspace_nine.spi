@@ -8,6 +8,8 @@ in_thread do
   end
 end
 
+sleep(0.3)
+
 in_thread do
   loop do
     sync :tick
