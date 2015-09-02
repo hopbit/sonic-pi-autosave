@@ -10,7 +10,6 @@
 
 use_bpm 128
 live_loop :foo do
-  use_synth :supersaw
-  play chord(:Gs4, :major), amp: 1
+  sample arovane_beat(16)
   sleep 2
 end
