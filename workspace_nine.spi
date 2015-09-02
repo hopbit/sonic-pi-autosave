@@ -1,1 +1,10 @@
-# Welcome to Sonic Pi v2.6
+# Sonic Pi Tutorial
+# 06.1 - Adding FX
+
+#notes to play
+live_loop : do
+  with_fx :reverb do
+    play n1
+    sleep 0.5
+  end
+end
