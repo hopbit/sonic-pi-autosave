@@ -1,1 +1,16 @@
-# Welcome to Sonic Pi v2.6
+# Sonic Pi Tutorial
+# 06.1 - Adding FX
+
+live_loop :foo do
+  play 55 + 18
+  sleep 1x
+  with_fx :reverb do
+    play 50 + 18
+    sleep 0.5
+    sample :elec_plip, amp: 4
+    sleep 0.5
+    play 62 + 18
+  end
+  sleep 1
+  play 55 + 18
+end
