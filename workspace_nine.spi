@@ -6,7 +6,7 @@ live_loop :foo do
   with_fx :reverb do
     play 50 + 24
     sleep 0.5
-    sample :elec_plip
+    sample :elec_plip, amp: 2
     sleep 0.5
     play 62 + 24
   end
