@@ -2,7 +2,7 @@
 # 06.1 - Adding FX
 
 #notes to play
-live_loop : do
+live_loop :foo do
   with_fx :reverb do
     play n1
     sleep 0.5
