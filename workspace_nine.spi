@@ -3,7 +3,7 @@
 
 live_loop :foo do
   play 55 + 18
-  sleep 1
+  sleep 1x
   with_fx :reverb do
     play 50 + 18
     sleep 0.5
