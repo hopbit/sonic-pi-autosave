@@ -9,7 +9,7 @@ live_loop :foo do
     sample :elec_plip, amp: 4
     sleep 0.5
     play 62 + 18
+    sleep 1
+    play 55 + 18
   end
-  sleep 1
-  play 55 + 18
 end
