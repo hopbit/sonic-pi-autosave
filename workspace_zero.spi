@@ -13,12 +13,14 @@
 
 use_bpm 128
 live_loop :foo do
-  4.times do
+  16.times do
     sample :bd_haus
     sleep 0.25
   end
-  3.times do
-    sample :bd_haus
-    sleep 1
+  comment do
+    3.times do
+      sample :bd_haus
+      sleep 1
+    end
   end
 end
