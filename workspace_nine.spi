@@ -1,8 +1,9 @@
 # Sonic Pi Tutorial
 # 06.1 - Adding FX
 
+use bpm
 live_loop :foo do
-  with_fx :wobble do
+  with_fx :wobble, phase: 0.1 do
     with_fx :echo, phase: 0.125 do
       sample :bd_haus
       sleep 1
