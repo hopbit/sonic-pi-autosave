@@ -2,12 +2,12 @@
 # 06.1 - Adding FX
 
 live_loop :foo do
-  with_fx :echo do
+  #with_fx :echo do
     play 50
     sleep 1
     sample :elec_plip
     sleep 1
     play 62
     sleep 1
-  end
+  #end
 end
