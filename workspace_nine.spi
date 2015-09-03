@@ -3,12 +3,14 @@
 
 
 live_loop :foo do
-  play 50
-  sleep 1
-  sample :elec_plip
-  sleep 1
-  play 62
-  sleep 1
-  sample :elec_plip
-  sleep 1
+  with_fx :echo, phase: 0.5 do
+    play 50
+    sleep 1
+    sample :elec_plip
+    sleep 1
+    play 62
+    sleep 1
+    sample :elec_plip
+    sleep 1
+  end
 end
