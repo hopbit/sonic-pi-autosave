@@ -12,7 +12,7 @@ live_loop :foo do
       sleep 1
       play 62
       sleep 1
-      sample :elec_plip
+      sample :elec_blup
       sleep 1
     end
   end
