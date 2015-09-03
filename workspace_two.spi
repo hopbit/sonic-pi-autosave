@@ -18,7 +18,7 @@ end
 
 
 live_loop :wub_wub do
-  sync :choir
+#  sync :choir
   with_fx :wobble, phase: 1, reps: 16 do |w|
     with_fx :echo, mix: 0.4, phase: 4 do
       sample :drum_heavy_kick, amp: 0.6
