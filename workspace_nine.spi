@@ -4,9 +4,9 @@
 live_loop :foo do
   with_fx :echo do
     play 50
-    sleep 2
+    sleep 1
     sample :elec_plip
-    sleep 2
+    sleep 1
     play 62
   end
 end
