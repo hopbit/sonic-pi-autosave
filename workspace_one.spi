@@ -1,43 +1,66 @@
 # Others Snippets
-# https://gist.github.com/jeremywen/c1e1c5615bd6d8837321
 
+# https://gist.github.com/jeremywen/266e1d74b6156bff0e19
 
-#samples = Dir.glob("/path/to/samples/*.wav")
-#samples = [:loop_amen_full, :ambi_choir]
-#samples = [:ambi_choir]
-samples = [:guit_harmonics]
-
-
-#starts = (ring 0, 0.25, 0.5, 0.75)
-#starts = range(0, 0.875, 0.125)
-starts = range(0, 0.875, 0.0625)
-#starts = (0..10).collect{rand(1)}
-rates = (ring -4, -3, -2, -1, 1, 2, 3, 4, 0.75, 0.5, -0.75, -0.5)
-repeats = (ring 1, 1, 1, 1, 2, 3, 4, 6, 8, 16)
-decays = (ring 0.015, 0.15, 0.25)
-
-use_debug false
-live_loop :loop1 do
-  nextSample = choose(samples)
-  nextDecay = choose(decays)
-  nextStart = choose(starts)
-  nextRate = choose(rates)
-  shouldAmpChange = rand(1) < 0.4
-  shouldAttackChange = rand(1) < 0.1
-  shouldRateChange = rand(1) < 0.25
-  shouldRateGoUp = rand(1) < 0.5
-
-  choose(repeats).times do |t|
-    nextRate = shouldRateChange ? (shouldRateGoUp ? (4.0*(t+1.0)) : (4.0/(t+1.0))) : nextRate
-    nextAmp = shouldAmpChange ? (4.0/(t+1.0)) : 4
-    nextAttack = shouldAttackChange ? (0.01*(t+1.0)) : 0
-    nextDecay = 0.35/(t+1.0)
-
-    with_fx :compressor, threshold: 0.3, amp: 0.6 do
-      sample nextSample, attack: nextAttack, decay: nextDecay, sustain_level:0, start: nextStart, rate: nextRate, amp: nextAmp
+live_loop :drums do
+  with_fx :level, amp:1.0 do
+    sample :bd_ada, attack:0, sustain_level:0, decay: 0.1, start: 0, amp:2, rate:0.5
+    sleep 0.125
+    with_fx :reverb, mix:0.2, room:0.5 do
+      sample :perc_snap, attack:0, sustain_level:0, decay: (ring 0.1, 0.1, 0.1, 0.5).tick(:t1), start: 0, amp:1, rate:(ring -2, -3, -4, -5).tick(:t1b)
+      sleep 0.125
+      with_fx :krush, mix:0.7 do
+        sample :misc_burp, attack:0, sustain_level:0, decay: 0.4, start: 0.5, amp:(ring 0.4, 0.6, 0.8, 0).tick(:t2), rate:0.9
+      end
     end
-
-    sleep (0.25/(t+1.0))
+    sleep 0.125
+    sample :bd_ada, attack:0, sustain_level:0, decay: 0.1, start: 0, amp:(ring 0, 0, 0, 1).tick(:bbb)
+    sleep 0.125
+    with_fx :reverb, mix:(ring 0, 0, 0, 0.4).tick(:rt3), room:0.7 do
+      sample :sn_dub, attack:0, sustain_level:0, decay: (ring 0.05, 0.05, 0.05, 0.5).tick(:t3), start: 0, amp:1
+    end
+    sleep 0.375
+    sample :sn_dub, attack:0, sustain_level:0, decay: 0.05, start: 0, amp:(ring 0, 0, 0.5, 0).tick(:sss)
+    sleep 0.125
   end
-  sleep 0.001
+end
+
+live_loop :bass do
+  with_fx :level, amp:1.5 do
+    sync :drums
+    use_synth :sine
+    play (scale :E1, :minor_pentatonic).tick(:mp), attack:0.08, decay: 1, sustain_level:0, amp:1
+    tick(:mp)
+    tick(:mp)
+    sleep 2
+  end
+end
+
+samples1 = (ring :guit_e_fifths, :guit_harmonics, :guit_e_slide, :guit_em9)
+live_loop :plucks do
+  sync :drums
+  with_fx :level, amp:1.5 do
+    with_fx :reverb, mix:0.5, room:0.3 do
+      sleep 0.75
+      4.times do
+        sample samples1.tick(:ts22), attack:0, sustain_level:0, decay: 0.25, start: (ring 0, 0, 0, 0, 0.2, 0, 0.1, 0.2).tick(:t4), amp:2, rate: (ring 0.5, 1, 0.125, 0.25).tick(:t22)
+        sleep 0.25
+      end
+      sleep 0.25
+    end
+  end
+end
+
+live_loop :pad do
+  sync :drums
+  with_fx :level, amp:0.2 do
+    with_fx :reverb, mix:0.7, room:0.7 do
+      with_fx :echo, mix:0.5, phase: 0.375, decay:6 do
+        with_fx :nhpf, centre:24, amp:0.25 do
+          sample :guit_e_fifths, attack:2, sustain_level:0, decay:2, start: 0, amp:1, rate: (ring 0.75, 0.5).tick
+          sleep 8
+        end
+      end
+    end
+  end
 end
