@@ -1,15 +1,18 @@
-play :C, amp: 0.5, pan: -1
-sleep 0.25
-play :D, amp: 0.5, pan: -0.75
-sleep 0.25
-play :E, amp: 0.5, pan: -0.5
-sleep 0.25
-play :F, amp: 0.5, pan: -0.25
-sleep 0.25
-play :G, amp: 0.5, pan: 0
-sleep 0.25
-play :A, amp: 0.5, pan: 0.25
-sleep 0.25
-play :B, amp: 0.5, pan: 0.5
-sleep 0.25
-play :C5, amp: 0.5, pan: 0.75
+# empty buffer
+
+# Filtered Dnb
+
+# Coded by Sam Aaron
+
+use_sample_bpm :loop_amen
+
+with_fx :rlpf, cutoff: 10, cutoff_slide: 4 do |c|
+  live_loop :dnb do
+    sample :bass_dnb_f, amp: 5
+    sample :loop_amen, amp: 5
+    sleep 1
+    control c, cutoff: rrand(40, 120), cutoff_slide: rrand(1, 4)
+  end
+end
+
+ 
