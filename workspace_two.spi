@@ -8,8 +8,10 @@ use_sample_bpm :loop_amen
 
 with_fx :rlpf, cutoff: 10, cutoff_slide: 4 do |c|
   live_loop :dnb do
-    sample :bass_dnb_f, amp: 5
-    with_fx : do
+    with_fx :flanger do
+      sample :bass_dnb_f, amp: 5
+    end
+    with_fx :compressor do
       sample :loop_amen, amp: 5
     end
     sleep 1
