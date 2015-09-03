@@ -23,7 +23,7 @@ live_loop :foo do
   4.times do
     sample :bd_haus
     sleep 1
-    sample :drum_cymbal_open
+    sample :drum_cymbal_open, amp: 0.25
     sleep 1
   end
 
