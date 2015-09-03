@@ -3,18 +3,13 @@
 
 
 live_loop :foo do
-  with_fx :wobble do
-    with_fx :echo, phase: 0.25 do
-      sample :bd_haus
-      sleep 1
-    end
-    # play 50
-    #sleep 1
-    #sample :elec_plip
-    #sleep 1
-    #play 62
-    #sleep 1
-    #sample :elec_plip
-    #sleep 1
-  end
+  play 50
+  sleep 1
+  sample :elec_plip
+  sleep 1
+  play 62
+  sleep 1
+  sample :elec_plip
+  sleep 1
+end
 end
