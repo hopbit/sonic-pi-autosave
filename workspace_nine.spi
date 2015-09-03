@@ -1,7 +1,7 @@
 # Sonic Pi Tutorial
 # 06.1 - Adding FX
 
-use_synth_defaults amp: 1
+use_synth_defaults amp: 2
 live_loop :foo do
   with_fx :echo, phase: 0.5 do
     play 50
