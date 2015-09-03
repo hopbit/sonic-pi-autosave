@@ -16,6 +16,7 @@ rates = (ring -4, -3, -2, -1, 1, 2, 3, 4, 0.75, 0.5, -0.75, -0.5)
 repeats = (ring 1, 1, 1, 1, 2, 3, 4, 6, 8, 16)
 decays = (ring 0.015, 0.15, 0.25)
 
+debug false
 live_loop :loop1 do
   nextSample = choose(samples)
   nextDecay = choose(decays)
