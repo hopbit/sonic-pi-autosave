@@ -1,14 +1,42 @@
-live_loop :techno do
-  sample :bd_tek
-  sleep 0.5
-  sample :sn_zome, amp: 0.25
-  sleep 0.25
-  #sample :bd_tek
-  sleep 0.25
-  sample :bd_tek
-  sleep 0.25
-  sample :bd_tek
-  sleep 0.25
-  sample :sn_zome, amp: 0.25
-  sleep 0.5
+# Others Snippets
+# https://gist.github.com/jeremywen/c1e1c5615bd6d8837321
+
+
+#samples = Dir.glob("/path/to/samples/*.wav")
+#samples = [:loop_amen_full, :ambi_choir]
+#samples = [:ambi_choir]
+samples = [:guit_harmonics]
+
+
+#starts = (ring 0, 0.25, 0.5, 0.75)
+#starts = range(0, 0.875, 0.125)
+starts = range(0, 0.875, 0.0625)
+#starts = (0..10).collect{rand(1)}
+rates = (ring -4, -3, -2, -1, 1, 2, 3, 4, 0.75, 0.5, -0.75, -0.5)
+repeats = (ring 1, 1, 1, 1, 2, 3, 4, 6, 8, 16)
+decays = (ring 0.015, 0.15, 0.25)
+
+live_loop :loop1 do
+  nextSample = choose(samples)
+  nextDecay = choose(decays)
+  nextStart = choose(starts)
+  nextRate = choose(rates)
+  shouldAmpChange = rand(1) < 0.4
+  shouldAttackChange = rand(1) < 0.1
+  shouldRateChange = rand(1) < 0.25
+  shouldRateGoUp = rand(1) < 0.5
+
+  choose(repeats).times do |t|
+    nextRate = shouldRateChange ? (shouldRateGoUp ? (4.0*(t+1.0)) : (4.0/(t+1.0))) : nextRate
+    nextAmp = shouldAmpChange ? (4.0/(t+1.0)) : 4
+    nextAttack = shouldAttackChange ? (0.01*(t+1.0)) : 0
+    nextDecay = 0.35/(t+1.0)
+
+    with_fx :compressor, threshold: 0.3, amp: 0.6 do
+      sample nextSample, attack: nextAttack, decay: nextDecay, sustain_level:0, start: nextStart, rate: nextRate, amp: nextAmp
+    end
+
+    sleep (0.25/(t+1.0))
+  end
+  sleep 0.001
 end
