@@ -13,6 +13,6 @@
 
 use_bpm 128
 live_loop :foo do
-  sample arovane_beat(16)
+  sample :bd_haus
   sleep 2
 end
