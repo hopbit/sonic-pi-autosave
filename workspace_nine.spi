@@ -3,15 +3,17 @@
 
 use_synth_defaults amp: 1
 use_sample_defaults amp: 1
-#live_loop :foo do
-  with_fx :echo, phase: 0.5, decay: 16 do
-    play 50
-    sleep 1
-    sample :elec_plip
-    sleep 1
-    play 62
-    sleep 1
-    sample :elec_plip
-    sleep 1
+live_loop :foo do
+  with_fx :reverb do
+    with_fx :echo, phase: 0.5, decay: 16 do
+      play 50
+      sleep 1
+      sample :elec_plip
+      sleep 1
+      play 62
+      sleep 1
+      sample :elec_plip
+      sleep 1
+    end
   end
-#end
+end
