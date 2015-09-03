@@ -4,7 +4,7 @@
 use_synth_defaults amp: 1
 use_sample_defaults amp: 1
 #live_loop :foo do
-  with_fx :echo, phase: 0.5, decay: 0.5 do
+  with_fx :echo, phase: 0.5, decay: 1 do
     play 50
     sleep 1
     sample :elec_plip
