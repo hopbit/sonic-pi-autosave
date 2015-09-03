@@ -12,4 +12,3 @@ live_loop :foo do
   sample :elec_plip
   sleep 1
 end
-end
