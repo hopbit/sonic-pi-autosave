@@ -11,16 +11,22 @@
 # Lets make some noise
 
 
+# Hi there, this is my first TEST live coding strem
+# I'm using here Sonic Pi, you can download it @ http://sonic-pi.net
+# I'm just testing if it's visible & hearable on the Web :)
+
 use_bpm 128
 live_loop :foo do
   4.times do
     sample :bd_haus
-    sleep 0.5
+    sleep 1
     with_fx :wobble do
       sample :drum_cymbal_closed, amp: 0.25
+      sleep 1
+    end
+    2.times do
+      sample :bd_haus
       sleep 0.5
     end
-
   end
-
 end
