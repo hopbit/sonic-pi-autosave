@@ -24,7 +24,7 @@ live_loop :wub_wub do
       sample :bass_hit_c, rate: 0.8, amp: 0.4
       sleep 1
       ## try changing the wobble's phase duration:
-      control w, phase: (ring 0.25, 2, 1).choose
+      control w, phase: (ring 1, 2, 4).choose
     end
   end
 end
