@@ -1,19 +1,9 @@
 # Sonic Pi Tutorial
-# 06.1 - Adding FX
+# 06.2 - FX in Practice
 
-use_synth_defaults amp: 1
-use_sample_defaults amp: 1
-live_loop :foo do
+loop do
   with_fx :reverb do
-    with_fx :echo, phase: 0.5, decay: 4 do
-      play 50
-      sleep 1
-      sample :elec_blup
-      sleep 1
-      play 62
-      sleep 1
-      sample :elec_blup
-      sleep 1
-    end
+    play 60, release: 0.1
+    sleep 0.125
   end
 end
