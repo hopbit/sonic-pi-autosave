@@ -4,6 +4,6 @@
 loop do
   with_fx :reverb do
     play 60, release: 0.1
-    sleep 0.125
+    sleep 0.5
   end
 end
