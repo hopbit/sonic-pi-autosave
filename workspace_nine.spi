@@ -2,7 +2,7 @@
 # 06.2 - FX in Practice
 
 loop do
-  with_fx :bitcrusher do
+  with_fx :reverb do
     play 60, release: 0.1
     sleep 0.125
   end
