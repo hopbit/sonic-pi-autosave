@@ -2,7 +2,7 @@
 # 06.2 - FX in Practice
 
 loop do
-  with_fx :ring_mod do
+  with_fx :bitcrusher do
     play 60, release: 0.1
     sleep 0.125
   end
