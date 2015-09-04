@@ -1,8 +1,8 @@
 # Sonic Pi Tutorial
 # 06.2 - FX in Practice
 
-loop do
-  with_fx :reverb do
+with_fx :reverb do
+  loop do
     play 60, release: 0.1
     sleep 0.125
   end
