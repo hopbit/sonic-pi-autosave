@@ -1,11 +1,4 @@
 # Sonic Pi Tutorial
-# 06.2 - FX in Practice
+# 07.1 - Controllin Running Synths
 
-loop do
-  with_fx :reverb do
-    16.times do
-      play 60, release: 0.1
-      sleep 0.125
-    end
-  end
-end
+s = play 60, release: 5
