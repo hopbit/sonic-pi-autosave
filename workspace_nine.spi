@@ -13,4 +13,4 @@ end
 
 use_synth :bnoise
 
-play 65, cutoff: 60
+play 65, cutoff: 70
