@@ -2,7 +2,7 @@
 # Coded by Sam Aaron
 # https://gist.github.com/samaaron/3f41f913bf6d1b6bf036
 bizet_bass = (ring :d, :r, :r, :a, :f5, :r, :a, :r)
-#bizet_bass = (ring :d, :r, :r, :Bb, :g5, :r, :Bb, :r)
+bizet_bass = (ring :d, :r, :r, :Bb, :g5, :r, :Bb, :r)
 
 live_loop :bizet do
   with_fx :reverb, room: 1, mix: 0.3 do
