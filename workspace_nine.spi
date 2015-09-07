@@ -3,8 +3,8 @@
 
 s = play 60, release: 5, amp: 2
 sleep 0.5
-control s, note: 65
+control s, note: 65, cutoff: 1
 sleep 0.5
-control s, note: 67
+control s, note: 67, cutoff: 2
 sleep 3
-control s, note: 72
+control s, note: 72, cutoff: 0.5
