@@ -32,6 +32,6 @@ end
 
 live_loop :drums do
   sample :bd_haus, cutoff: 130
-  synth :beep, note: 70, attack: 0, release: 0.1
+  synth :beep, note: 80, attack: 0, release: 0.1
   sleep 0.5
 end
