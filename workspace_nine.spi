@@ -1,4 +1,4 @@
 # Sonic Pi Tutorial
 # 07.1 - Controllin Running Synths
 
-s = play 60, release: 5
+s = play 70, release: 5
