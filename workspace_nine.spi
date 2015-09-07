@@ -1,16 +1,1 @@
-# Sonic Pi Tutorial
-# 07.1 - Controllin Running Synths
-
-comment do
-  s = play 60, release: 5, amp: 2
-  sleep 0.5
-  control s, note: 65, cutoff: 1
-  sleep 0.5
-  control s, note: 67, cutoff: 2
-  sleep 3
-  control s, note: 72, cutoff: 0.5
-end
-
-use_synth :bnoise
-
-play 65, cutoff: 80
+# Welcome to Sonic Pi v2.6
