@@ -11,4 +11,6 @@ comment do
   control s, note: 72, cutoff: 0.5
 end
 
+use_synth :bnoise
+
 play 65, cutoff: 0.25
