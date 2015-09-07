@@ -1,4 +1,4 @@
 # Sonic Pi Tutorial
 # 07.1 - Controllin Running Synths
 
-s = play 65, sustain: 5, release: 2.5
+s = play 65, attack: 2.5, decay: 2.5, sustain: 2.5, release: 2.5
