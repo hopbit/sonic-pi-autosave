@@ -11,4 +11,4 @@ comment do
   control s, note: 72, cutoff: 0.5
 end
 
-play 65, cutoff: 5
+play 65, cutoff: 0.25
