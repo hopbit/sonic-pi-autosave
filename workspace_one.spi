@@ -7,7 +7,7 @@ bizet_bass = (ring :d, :r, :r, :Bb, :g5, :r, :Bb, :r)
 live_loop :bizet do
   with_fx :reverb, room: 1, mix: 0.3 do
     with_fx :slicer, phase: 0.125 do
-      synth :blade, note: :d4, release: 8, cutoff: 100, amp: 1.5
+      synth :blade, note: :d4, release: 8, cutoff: 100, amp: 1
     end
     16.times do
       use_transpose 0
