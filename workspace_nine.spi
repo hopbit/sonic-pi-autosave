@@ -1,15 +1,11 @@
 # Sonic Pi Tutorial
-# 07.2 - Controlling FX
+# 07.3 - Sliding Parameters
 #live_loop :foo do
-  use_synth_defaults amp: 2
-  with_fx :reverb do |r|
-    play 50 + 16
-    sleep 1
-    control r, mix: 0.7
-    play 55 + 16
-    sleep 1
-    control r, mix: 0.9
-    sleep 1
-    play 62 + 16
-  end
+s = play 60, release: 5
+sleep 0.5
+control s, note: 65
+sleep 0.5
+control s, note: 67
+sleep 3
+control s, note: 72
 #end
