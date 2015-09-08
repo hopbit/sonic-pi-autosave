@@ -1,7 +1,7 @@
 # Sonic Pi Tutorial
 # 07.2 - Controlling FX
 live_loop :foo do
-  use_synth_defaults amp: 4
+  use_synth_defaults amp: 2
   with_fx :reverb do |r|
     play 50
     sleep 0.5
