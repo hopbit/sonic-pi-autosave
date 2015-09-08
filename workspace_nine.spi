@@ -1,16 +1,13 @@
 # Sonic Pi Tutorial
-# 07.1 - Controllin Running Synths
+# 07.2 - Controlling FX
 
-comment do
-  s = play 60, release: 5, amp: 2
+with_fx :reverb do |r|
+  play 50
   sleep 0.5
-  control s, note: 65, cutoff: 1
-  sleep 0.5
-  control s, note: 67, cutoff: 2
-  sleep 3
-  control s, note: 72, cutoff: 0.5
+  control r, mix: 0.7
+  play 55
+  sleep 1
+  control r, mix: 0.9
+  sleep 1
+  play 62
 end
-
-use_synth :bnoise
-
-play 65, cutoff: 80
