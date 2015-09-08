@@ -1,7 +1,7 @@
 # Sonic Pi Tutorial
 # 07.3 - Sliding Parameters
 #live_loop :foo do
-s = play 60, release: 5, note_slide: 0.25, amp: 3
+s = play 60, release: 5, note_slide: 0.4, amp: 3
 sleep 0.5
 control s, note: 65
 sleep 0.5
