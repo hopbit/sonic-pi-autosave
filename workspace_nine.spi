@@ -5,7 +5,7 @@
   with_fx :reverb do |r|
     play 50 + 16
     sleep 1
-    control r, mix: 0.7
+    control r, mix: 0.5
     play 55 + 16
     sleep 1
     control r, mix: 0.9
