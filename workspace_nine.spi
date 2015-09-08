@@ -5,10 +5,10 @@ live_loop :foo do
   with_fx :reverb do |r|
     play 50 + 16
     sleep 1
-    control r, mix: 0.1
+    control r, mix: 1
     play 55 + 16
     sleep 1
-    control r, mix: 0.2
+    control r, mix: 2
     sleep 1
     play 62 + 16
     sleep 1
