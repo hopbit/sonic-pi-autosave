@@ -1,14 +1,15 @@
 # Sonic Pi Tutorial
 # 07.2 - Controlling FX
-
-use_synth_defaults amp: 4
-with_fx :echo do |r|
-  play 50
-  sleep 0.5
-  control r, mix: 0.7
-  play 55
-  sleep 1
-  control r, mix: 0.9
-  sleep 1
-  play 62
+live_loop :foo do
+  use_synth_defaults amp: 4
+  with_fx :echo do |r|
+    play 50 + 16
+    sleep 1
+    control r, mix: 0.7
+    play 55 + 16
+    sleep 1
+    control r, mix: 0.9
+    sleep 1
+    play 62 + 16
+  end
 end
