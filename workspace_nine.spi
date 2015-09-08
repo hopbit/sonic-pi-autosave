@@ -3,13 +3,13 @@
 live_loop :foo do
   use_synth_defaults amp: 1
   with_fx :reverb do |r|
-    play 50
+    play 50 + 8
     sleep 0.5
     control r, mix: 0.7
-    play 55
+    play 55 + 8
     sleep 1
     control r, mix: 0.9
     sleep 1
-    play 62
+    play 62 + 8
   end
 end
