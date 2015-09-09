@@ -2,8 +2,8 @@
 # 07.3 - Sliding Parameters
 #live_loop :foo do
 with_fx :wobble, phase: 1 do |e|
-use_synth :dsaw
-play 50, release: 5
-control e, phase: 0.025
+  use_synth :dsaw
+  play 50, release: 5
+  control e, phase: 0.025
 end
 #end
