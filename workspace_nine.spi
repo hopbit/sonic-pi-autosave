@@ -1,7 +1,7 @@
 # Sonic Pi Tutorial
 # 07.3 - Sliding Parameters
 #live_loop :foo do
-with_fx :wobble, phase: 1, phase_slide:10 do |e|
+with_fx :wobble, phase: 1, phase_slide:5 do |e|
   use_synth :dsaw
   play 50, release: 10
   control e, phase: 0.025
