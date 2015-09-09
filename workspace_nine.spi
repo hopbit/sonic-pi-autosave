@@ -3,7 +3,7 @@
 #live_loop :foo do
 with_fx :wobble, phase: 1, phase_slide:10 do |e|
   use_synth :dsaw
-  play 50, release: 5
+  play 50, release: 10
   control e, phase: 0.025
 end
 #end
